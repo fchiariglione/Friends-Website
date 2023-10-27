@@ -1,0 +1,53 @@
+.textListBlock{
+    background-color: #F1C96D;
+    h2{
+        color: $primary !important;
+    }
+    p, strong{
+        color: $dark-text !important;
+    }
+    .textListBlock-list{
+        position: relative;
+        counter-reset: blockList;
+        list-style: none;
+        padding-left: 40px !important;
+        li{
+            counter-increment: blockList !important;             
+            h3{
+                color: $primarydark !important;
+                font-weight: 900 !important;
+                font-size: 22px !important;
+                line-height: 30px !important;
+                margin-bottom: 1px !important;
+                font-family: "Lato", sans-serif !important;
+            }
+            p{
+                color: $dark-text !important;
+            }
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 31px !important;
+                height: 31px !important;
+                background-color: $primarydark !important;
+                border-radius: 100% !important;
+                position: absolute;
+                left: -49px;
+                z-index: 0;
+            }
+            &::after{
+                content: counter(blockList); 
+                color: $primarylight !important;
+                position: absolute;
+                display: block;
+                left: -40px;
+                top: 0px;
+                font-size: 21px;
+                font-weight: bold;
+            }
+            &::marker{
+                content: none !important;
+            }
+        }
+    }
+}

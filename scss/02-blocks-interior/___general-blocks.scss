@@ -1,0 +1,522 @@
+.text-photo-block + .text-photo-block{
+  padding-top: 0 !important;
+  padding-bottom: 75px !important;
+}
+.text-photo-block + .text-photo-block-2{
+  padding-top: 0 !important;
+  padding-bottom: 75px !important;
+}
+.text-photo-block + p, .text-photo-block-2 + p{
+  margin-top: 20px;
+}
+
+.padding-vertical{
+  padding: 75px 0;
+  @media (max-width: 1199.98px){
+    padding: 50px 0;
+  }
+  @media (max-width: 767.98px){
+    padding: 25px 0;
+  }
+}
+
+.entry-content,
+.text-photo-block,
+.text-photo-block-2,
+.text-only-block,
+.video-text-block,
+.detail-call-out-block,
+.text-list-block,
+.image-carousel-block,
+.accordion-effect-block,
+.timeline-block{
+  &.alignfull{
+    @media (max-width: 991.98px){
+      margin-left: calc( -100vw / 2 + 100% / 2 ) !important;
+      margin-right: calc( -100vw / 2 + 100% / 2 ) !important;
+      max-width: 100vw;
+      padding: 40px 0;
+    }
+    .row{
+      @media (max-width: 575.98px){
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    .side-text, .side-image{
+      @media (max-width: 575.98px){
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+  .bg-primary-color{
+    background-color: $primary !important;
+  }
+  .bg-primarylight-color{
+    background-color: $primarylight !important;
+  }
+  .bg-primarydark-color{
+    background-color: $primarydark !important;
+  }
+  .bg-primaryDark-color{
+    background-color: $primaryDark !important;
+  }
+  .bg-secondary-color{
+    background-color: $secondary !important;
+  }
+  .bg-secondaryDark-color{
+    background-color: $secondaryDark !important;
+  }
+  .bg-secondarydark-color{
+    background-color: $secondarydark !important;
+  }
+  .bg-secondarylight-color{
+    background-color: $secondarylight !important;
+  }
+  .bg-tertiary-color{
+    background-color: $tertiary !important;
+  }
+  .bg-tertiarydark-color{
+    background-color: $tertiarydark !important;
+  }
+  .bg-quaternary-color{
+    background-color: $quaternary !important;
+  }
+  .bg-grey-color{
+    background-color: $grey !important;
+  }  
+  .bg-white-color{
+    background-color: $white !important;
+  }
+  .bg-black-color{
+    background-color: $black !important;
+  }
+  /*Light Color Paragraph*/
+  &.bg-primary-color,
+  &.bg-primarylight-color,
+  &.bg-primarydark-color,
+  // &.bg-secondary-color,
+  // &.bg-secondarylight-color,
+  // &.bg-tertiary-color,
+  // &.bg-tertiarylight-color,
+  // &.bg-quaternary-color,
+  // &.bg-quaternarylight-color,
+  &.bg-grey-color,
+  &.bg-black-color{
+    h2,h3,h4,h5,h6,p,em,ul,ul > li,ol, ol > li,span, blockquote, a:not([class*="btn"]){
+      color: $white !important;
+      a{
+        color: $white !important;
+        strong{
+          font-weight: 500 !important;
+          color: initial !important;
+        }
+        strong ,em, strong em{
+          color: $white !important;
+        }
+      }
+    }
+    blockquote{
+      border-color: $white !important;
+      p{
+        color: $white !important;
+      }
+    }
+    ul li::before, ul.list li::before{
+      background: $white !important;
+    }
+    ol li::before, ol.list li::before, ul li::marker{
+      color: $white !important;
+    }
+    p{
+      strong, em, ul{
+        color: $white !important;
+      }
+    }
+  }
+  /*end Light Color Paragraph*/
+  .has-white-color{
+    color: $white !important;
+    p,span,strong,a:not([class*="btn"]),blockquote,h2,h3,h4,h5,h6,ul > li, ul li > p, ol > li, ol li > p{
+      color: $white !important;
+    }
+    a:not([class*="btn"]){
+      text-decoration: underline !important;
+      color: $secondary;
+    }
+    ol, ol.list{
+      li{
+        &::before{
+          color: $white !important;
+        }
+        a{
+          color: #ffffff !important;
+        }
+      }
+    }
+    ul li::marker{
+      color: $white !important;
+    }
+    ul,ul.list{
+      li{
+        color: #ffffff !important;
+        &::before{
+          background: $secondary !important;
+        }
+        a{
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  .has-black-color{
+    color: #000000 !important;
+    p,span,strong,a:not([class*="btn"]),blockquote,h2,h3,h4,h5,h6,ul > li, ul li > p, ol > li, ol li > p{
+      color: #000000 !important;
+    }
+    a:not([class*="btn"]){
+      text-decoration: underline !important;
+    }
+    ol, ol.list{
+      li{
+        &::before{
+          color: #000000 !important;
+        }
+        a{
+          color: #000000 !important;
+          &:hover{
+            border-color: #000000 !important;
+          }
+        }
+      }
+    }
+    ul,ul.list{
+      li{
+        color: #000000 !important;
+        &::before{
+          background: #000000 !important;
+        }
+        a{
+          color: #000000 !important;
+          &:hover{
+            border-color: #000000 !important;
+          }
+        }
+      }
+    }
+  }
+  .has-primary-color{
+    color: $primary !important;
+    p,span,strong,a:not([class*="btn"]),blockquote,h2,h3,h4,h5,h6,ul > li, ul li > p, ol > li, ol li > p{
+      color: $primary !important;
+    }
+    a:not([class*="btn"]){
+      text-decoration: underline !important;
+    }
+    ol, ol.list{
+      li{
+        &::before{
+          color: #ffffff !important;
+        }
+        a{
+          color: $primary !important;
+          &:hover{
+            border-color: $primary !important;
+          }
+        }
+      }
+    }
+    ul,ul.list{
+      li{
+        color: $primary !important;
+        &::before{
+          background: #ffffff !important;
+        }
+        a{
+          color: $primary !important;
+          &:hover{
+            border-color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+  .has-primarylight-color{
+    color: $primarylight !important;
+    p,span,strong,a:not([class*="btn"]),blockquote,h2,h3,h4,h5,h6,ul > li, ul li > p, ol > li, ol li > p{
+      color: $primarylight !important;
+    }
+    a:not([class*="btn"]){
+      text-decoration: underline !important;
+    }
+    ol, ol.list{
+      li{
+        &::before{
+          color: #ffffff !important;
+        }
+        a{
+          color: $primarylight !important;
+          &:hover{
+            border-color: $primarylight !important;
+          }
+        }
+      }
+    }
+    ul,ul.list{
+      li{
+        color: $primarylight !important;
+        &::before{
+          background: #ffffff !important;
+        }
+        a{
+          color: $primarylight !important;
+          &:hover{
+            border-color: $primarylight !important;
+          }
+        }
+      }
+    }
+  }
+  .has-primarydark-color{
+    color: $primarydark !important;
+    p,span,strong,a:not([class*="btn"]),blockquote,h2,h3,h4,h5,h6,ul > li, ul li > p, ol > li, ol li > p{
+      color: $primarydark !important;
+    }
+    a:not([class*="btn"]){
+      text-decoration: underline !important;
+    }
+    ol, ol.list{
+      li{
+        &::before{
+          color: #ffffff !important;
+        }
+        a{
+          color: $primarydark !important;
+          &:hover{
+            border-color: $primarydark !important;
+          }
+        }
+      }
+    }
+    ul,ul.list{
+      li{
+        color: $primarydark !important;
+        &::before{
+          background: #ffffff !important;
+        }
+        a{
+          color: $primarydark !important;
+          &:hover{
+            border-color: $primarydark !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.content-block{
+  position: relative;
+  .main-content{
+    h2,h3,h4,h5,h6{
+      @include font1;
+      display: block;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 10px;
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+    }
+    p,strong,em,ul,ul > li,ol, ol > li,span{
+      @include font1;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: -0.14px;
+      line-height: 1.44;
+      strong{
+        font-weight: 700;
+      }
+      em{
+        font-style: italic;
+      }
+      a{
+        color: $link;
+        text-decoration: underline !important;
+      }
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+    }
+    strong em{
+      font-weight: 700 !important;
+    }
+    ul,ul > li,ol, ol > li{
+      &::before,&::marker{
+        background-color: $primary;
+      }
+    }
+    p:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  .main-content:not(.light-color){
+    h2,h3,h4,h5,h6,p,blockquote,ul > li, ul li > p, ol > li, ol li > p{
+      color: $text;
+      strong{
+        color: $link;
+      }
+    }
+    a:not([class*="btn"]){
+      color: $link;
+    }
+  }
+  &.light-color{
+    p,span:not(.top-title-section),strong,a:not([class*="btn"]),blockquote,h2,h3,h4,h5,h6,ul > li, ul li > p, ol > li, ol li > p, strong em, em{
+      color: $white !important;
+    }
+  }
+  &.center{
+    text-align: center;
+    .main-content{
+      h2,h3,h4,h5,h6,p,a,strong,span{
+        text-align: center !important;
+      }
+    }
+  }
+  &.right{
+    text-align: right;
+    .main-content{
+      h2,h3,h4,h5,h6,p,a,strong,span{
+        text-align: right !important;
+      }
+    }
+  }
+  .btn-container{
+    margin-top: 15px;
+  }
+}
+
+/*Buttons Container*/
+
+.btn-container{
+  text-align: left; 
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &.wp-block-acf-button{
+    margin-top: 15px;
+  }
+  a[class^="btn-"]{
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  &.aligncenter, &.center{
+    text-align: center !important;
+    justify-content: center;
+    a[class^="btn-"]{
+      margin-left: 15px;
+    }
+  }
+  &.alignright, &.right{
+    text-align: right !important;
+    justify-content: end;
+    a[class^="btn-"]{
+      margin-left: 15px;
+      margin-right: 0;
+    }
+  }
+}
+
+.wp-block-media-text{
+  margin-bottom: 20px;
+  &.has-media-on-the-right{
+    .wp-block-media-text__content{
+      padding-left: 0 !important;
+    }
+  }
+  &.has-media-on-the-left{
+    .wp-block-media-text__content{
+      padding-right: 0 !important;
+    }
+  } 
+}
+
+.wp-block-gallery,.blocks-gallery-grid { 
+  ul.blocks-gallery-grid li.blocks-gallery-item figure{
+    position: relative;
+    figcaption{
+      padding-top: 15px;
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+    }
+  }
+}
+
+@include mediaqueries(991max) {
+  .wp-block-image .alignright, .wp-block-image .alignleft{
+    float: none !important;
+    margin: 0 auto;
+  }
+  .wp-block-media-text{
+    display: flex !important;
+    flex-direction: column;
+    padding: 0 0 30px;
+    .wp-block-media-text__content{
+      padding: 0;
+      width: 100%;
+      p{
+        &:last-of-type{
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  .wp-block-media-text{
+    &.has-media-on-the-right, &.has-media-on-the-right{
+      figure{
+        width: 100%;
+      }
+    }
+  }
+  .wp-block-media-text .wp-block-media-text__media{
+    width: 100%;
+    margin: 20px auto !important;
+    img{
+      width: 100% !important;
+      object-fit: contain;
+    }
+  }
+} 
+@include mediaqueries(767max) {
+  .wp-block-columns.has-2-columns{
+    .wp-block-column{
+      flex-basis: 100%;
+      &:nth-child(2){
+        text-align: center;
+      }
+    }
+  }
+  .wp-block-spacer{
+    height: 5vh !important;
+  }
+  .wp-block-column{
+    -ms-flex-preferred-size: 100% !important;
+    flex-basis: 100% !important;
+  }
+  .wp-block-media-text{
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    //.wp-block-media-text__media{}
+  }
+}

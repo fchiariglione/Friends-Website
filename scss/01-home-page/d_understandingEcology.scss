@@ -1,0 +1,226 @@
+.understandingEcology{
+    position: relative;
+    transition: all 0.4s ease;
+    background-image: url("../images/understanding-bg.png");
+    background-size: cover;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 88px;
+        top: -88px;
+        background-image: url("../images/understanding-separator.png");
+        display: block;
+        background-size: cover;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+
+    &-container{
+        padding-top: 9.5%;
+        padding-bottom: 0;
+        position: relative;
+        @media (max-width: 1199.98px){
+            padding-top: 7%;
+            padding-top: 4%;
+        }
+        .understandingEcology-birds{
+            position: absolute;
+            top: 0;
+            right: 6%;
+            width: 44.4%;
+            height: 200px;
+            opacity: 1;
+            background-image: url("../images/understanding-birds.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .subheader-title{
+            color: $secondarydark;
+        }
+        .understandingEcology-row{
+            display: flex;
+            justify-content: space-between;
+            .understandingEcology-content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                row-gap: 15px;
+                &-title{
+                    width: 100%;
+                    flex: 0 0 auto;
+                    h2{
+                        color: $tertiarydark;
+                        margin: 0;
+                    }
+                }
+                &-text{
+                    width: 83%;
+                    flex: 0 0 auto;
+                    p{
+                        color: $dark-text;
+                    }
+                }
+                .btn-understanding{
+                    display: flex;
+                    gap: 19px;
+                    margin-top: 40px;
+                }
+                @media (max-width: 767.98px){
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    &-title{
+                        width: 100%;
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                    &-text{
+                        width: 100%;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                    .btn-understanding{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .understanding-takeAction{
+                display: flex;
+                flex-flow: wrap row;
+                padding-top: 63px;
+                .takeAction-header{
+                    display: flex;
+                    gap: 23px;
+                    flex-flow: wrap row;
+                    align-items: center;
+                    h4{
+                        margin: 0;
+                    }
+    
+                }
+                .advocacyAlert{
+                    display: flex;
+                    background-image: url("../images/undestanding-altertblock-bg.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: relative;
+                    width: 426px;
+                    height: 305px;
+                    .featureNews{
+                        padding: 39.5px 30px 39.5px 66px;
+                        justify-content: space-between;
+                        flex-basis: auto !important;
+                        .featureNews-header{
+                            h6{
+                                color: $dark-text;
+                                margin: 0;
+                                position: relative;
+                            }
+                            &::after{
+                                bottom: -12px;
+                            }
+                        }
+                        .featureNews-calendar{
+                            position: relative;
+                            flex: 0 0 100%;
+                            color: $secondarydark;
+                            &::before{
+                                background-image: url("../images/icons/calendar-secondarydark.svg");
+                            }
+
+                        }
+                    //     .featureNews-text{
+                    //         flex: 0 0 100%;
+                    //         font-size: 22px;
+                    //         line-height: 1.18;
+                    //         font-weight: bold;
+                    //         color: $dark-text;
+                    //         margin-bottom: 20px;
+                    //     }
+                        .line-texture{
+                            position: absolute;
+                            background-image: url("../images/undestanding-line.svg");
+                            background-size: contain;
+                            width: 172px;
+                            height: 261px;
+                            top: 19px;
+                            right: -142px;
+                        }
+                    }
+                }
+                @media (max-width: 767.99px){
+                    .takeAction-header{
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        flex-flow: column;
+                        gap: 5px;
+                        margin-bottom: 30px;
+                    }
+                    .advocacyAlert{
+                        width: 100%;
+                        background-image: none;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: -50px;
+                            width: 150vw;
+                            height: 100%;
+                            display: block;
+                            background-image: url("../images/undestanding-altertblock-bg.png");
+                            background-size: cover;
+                            z-index: -1;
+                        }
+                        .featureNews-content{
+                            padding: 50px 0;
+                            .featureNews-headerheader{
+                                h6{
+                                    &::after{
+                                        content: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                @media (min-width: 768px) and (max-width: 1199.98px){
+                    align-items: center;
+                    justify-content: space-between;
+                    .takeAction-header{
+                        width: 33.33%;
+                        align-items: center;
+                        justify-content: center;
+                        flex-flow: column;
+                        gap: 15px;
+                        h4{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767.99px){
+        &::before{
+            content: "";
+            opacity: 0;
+        }
+        .understandingEcology-birds{
+            opacity: 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199.99px){
+        &::before{
+            content: "";
+            height: 47px;
+            top: -47px;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.image-carousel-block{
+  background-color: transparent;
+  position: relative;
+  &.padding-vertical{
+    padding: 95px 0 120px;
+    @media (max-width: 575.98px){
+      padding: 40px 0;
+    }
+  }
+  .top-section{
+    margin-bottom: 30px;
+    h2,h3,h4,h5,h6{
+      margin-bottom: 0 !important;
+    }
+  }
+  .swiper-container-gallery{
+    overflow: hidden;
+    padding-bottom: 60px;
+    padding: 0;
+    position: relative;
+    width: calc(100% + ((100vw - 1320px)/(2)));
+    @media (max-width: 1399.98px){
+      width: calc(100% + ((100vw - 1140px)/(2)));
+    }
+    @media (max-width: 991.98px){
+      width: calc(100% + ((100vw - 960px)/(2)));
+    }
+    @media (max-width: 767.98px){
+      width: 100%;
+    }
+    .swiper-wrapper{
+      margin-bottom: 70px;
+      @media (max-width: 575.98px){
+        margin-bottom: 30px;
+      }
+      .swiper-slide{
+        overflow: hidden;
+        width: auto;
+        figure{
+          display: block;
+          margin-right: 15px;
+          img{
+            width: 100%;
+            height: 350px !important;
+            object-fit: cover;
+            @media (max-width: 575.98px){
+              object-fit: contain;
+              height: 270px !important;
+            }
+          }
+          .text-wrap{
+            display: none;
+            @include font1;
+            color: #4d4d4f;
+            font-size: 14px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: normal;
+            letter-spacing: 0.98px;
+            line-height: 1.43;
+            padding: 15px 0;
+            text-align: left;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .container-controls{
+      position: relative;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .arrows{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 50px;
+        width: 100px;
+      }
+
+    }
+  }
+  .swiper-pagination-bullet-active{
+    opacity:1;
+    background: $primary !important
+  }
+  .swiper-container-horizontal {
+    > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+      left: 33% !important;
+    }
+  } 
+}

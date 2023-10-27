@@ -1,0 +1,107 @@
+.video-text-block, .video-text-block-column{
+  position: relative;
+  &.padding-vertical{
+    padding-bottom: 95px;
+  }
+  .poster-image{
+    background-color: #000;
+    height: 490px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 575.98px){
+      height: 400px;
+    }
+    img{
+      @include center(-50%, -50%);
+      bottom: unset;
+      height: 100%;
+      left: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      z-index: 1;
+    }
+    &::before{
+      content: "";
+      background-color: rgba($color: #515151, $alpha: 0.28);
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+    #button-play-popup{
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      bottom: calc(50% - 43.5px);
+      display: flex;
+      flex-wrap: nowrap;
+      left: calc(50% - 43.5px);
+      position: absolute;
+      z-index: 3;
+      .playIframe{
+        background-image: url('../images/icons/icon-play.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @include resize(1,1);
+        border-radius: 50%;
+        display: inline-block;
+        flex: 0 0 auto;
+        height: 90px;
+        margin: 0;
+        transition: all 0.4s ease;
+        width: 90px;
+        @media (max-width: 575.98px){
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .play-label{
+        @include font2;
+        color: $white;
+        display: inline-block;
+        font-size: 18px;
+        font-stretch: normal;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.14px;
+        line-height: 1.11;
+        text-align: left;
+      }
+      &:hover, &:focus{
+        outline: none;
+        .playIframe{
+          background-image: url('../images/icons/icon-play-hover.svg');
+          @include resize(1.1,1.1);
+        }
+      }
+    }
+  }
+  .text-video-block{
+    padding-top: 25px;
+    &.center{
+      text-align: center;
+    }
+    &.right{
+      text-align: right;
+    }
+    h2,h3,h4,h5,h6{
+      margin-bottom: 13px !important;
+      color: $text;
+    }
+    p{
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+    .btn-container{
+      margin-top: 20px;
+    }
+  }
+}

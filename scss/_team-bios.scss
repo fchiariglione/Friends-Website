@@ -1,0 +1,401 @@
+.popup_vcard .modal-content button.close{
+  span{
+    color: $white;
+  }
+}
+.popup_vcard .modal-content .side-right .social-networks{
+  i{
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
+.team-vGrid-square .single-member .featured-member-images .hover-box .bottom-info-member .name-member{
+  h3,span{
+    @include font1;
+  }
+  .position-member{
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+  }
+}
+.popup_vcard .modal-content {
+  .side-right,.side-left {
+    .name-member h3,
+    .position-member{
+      @include font1;
+      display: block;
+    }
+  }
+}
+.popup_vcard .modal-content button.close, #popup_vcard .modal-content button.close{
+  border: none;
+}
+
+.team-vCarousel #carousel__team .single-member{
+  padding: 0 15px;
+  &:hover,&:focus{
+    .featured-member-images{
+      &::before,&::after{
+        opacity: 0.8;
+      }
+      a.hover-link-plus {
+        top: 50%;
+      }
+    }
+  }
+}
+
+.team-vCarousel{
+  #carousel__team{
+  .carousel-control-next, .carousel-control-prev{
+      width: 10%;
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: transparent;
+        background-size: 41px 41px;
+        border-radius: 50%;
+        height: 41px;
+        width: 41px;
+      }
+      .carousel-control-prev-icon{
+        background-image: url('../images/icons/chevron-arrow-left-black.svg');
+      }     
+    }
+  }
+}
+.team-vCarousel #carousel__team .carousel-control-next .carousel-control-next-icon{
+  background-image: url('../images/icons/chevron-arrow-left-black.svg');
+}
+.team-vCarousel #carousel__team .single-member .body-member .name-member::after {
+  background-color: $primary;
+}
+.team_panel .side-panel-fixed{
+  background-color: $white !important;
+  .right-side-panel {
+    .title-member, .body-panel,.body-panel .content-member p, span{
+      color: rgba($color: $primary, $alpha: 1) !important;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.44;
+      letter-spacing: normal;
+    }
+    .body-panel .content-member{
+      margin-bottom: 50px !important;
+    }
+  }
+}
+.team-vList .featured-member-images{
+  box-shadow: none !important;
+  img{
+    @include center(-50%, 0);
+    position: absolute;
+    bottom: unset;
+    left: 50%;
+    top: 0;
+    object-position: top center;
+  }
+}
+.team-vList .name-member::after{
+  background-color: $secondary !important;
+}
+.team-vList .featured-member-images img{
+  transform: translate(-50%, 0) !important;
+  top: 0 !important;
+}
+.team-vList .single-member{
+  @media (max-width: 991.98px){
+    flex-wrap: wrap;
+  }
+}
+.team-vGrid-circle,.team-vGrid-square {
+  .single-member .featured-member-images .hover-box .read-more-hover{
+    text-decoration: none !important;
+    .fa-plus-circle{
+      //font-size: inherit !important;
+    }
+  }
+}
+.social-networks a i, .social-networks a svg[class^="fa"], .social-networks a svg[class^="fas"], .social-networks a .svg-inline--fa, .social-networks li i, .social-networks li svg[class^="fa"], .social-networks li svg[class^="fas"], .social-networks li .svg-inline--fa, .social-networks li a i, .social-networks li a svg[class^="fa"], .social-networks li a svg[class^="fas"], .social-networks li a .svg-inline--fa{
+  color: #fff !important;
+}
+.team-vGrid-square-sm .single-member .featured-member-images,
+.team-vGrid-circle .single-member .featured-member-images ,
+.team-vGrid-square .single-member .featured-member-images {
+  background-color: $white !important;
+  img{
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .hover-box{
+    color: white;
+    .read-more-hover{
+      border-bottom-color: transparent;
+      text-align: center;
+      font-size: 22px !important;
+      text-decoration: none !important;
+      color: white !important;
+      width: 100%;
+      height: 100%;
+      .link-read-more{
+        @include center(-50%, -50%);
+        position: absolute;
+        bottom: unset;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &:hover{
+        border-color: transparent !important;
+        color: $secondary !important;
+      }
+      .fa-plus-circle {
+        font-size: 25px !important;
+        margin: 0 0 0 8px;
+      }
+    }
+    .link-read-more{
+      line-height: 1;
+      text-align: center;
+      .fa-plus-circle{
+        vertical-align: inherit !important;
+      }
+    }
+    &:hover{
+      border-bottom-color: transparent !important;
+    }
+    .social-networks{
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      li{
+        padding: 0;
+        margin: 0 10px !important;
+        &::before{
+          content: none !important;
+        }
+        a{
+          border-bottom-color: transparent !important;
+          &:hover{
+            border-bottom-color: transparent !important;
+            i{
+              color: $primary !important;
+            }
+          }
+        }
+      }
+    }
+    .bottom-info-member .name-member h3{
+      color: $white !important; 
+      a{
+        color: $white !important; 
+      }
+    }
+  }
+}
+.team-vGrid-circle .single-member{
+  @media (max-width: 575.98px){
+    margin-bottom: 20px;
+  }
+  &.col-lg-6{
+    .featured-member-images .hover-box .bottom-info-member{
+      padding: 10px 22% 30px;
+    }
+  }
+  .featured-member-images{
+    background-color: $primary !important;
+    img{
+      height: 100% !important;
+    }
+    .hover-box{
+      color: $white;
+      .bottom-info-member .name-member h3{
+        font-size: 24px !important;
+        letter-spacing: normal !important;
+        text-transform: capitalize !important;
+      }
+      .read-more-hover , .link-read-more{
+        color: $white !important;
+        border-bottom: none !important;
+        &:hover{
+          border-color: transparent !important;
+        }
+      }
+      .social-networks {
+        padding: 0 !important;
+        li{
+          display: inline-block !important;
+          padding: 0 !important;
+          a{
+            color: $white !important;
+          }
+          &::before{
+            content: none !important;
+          }
+        } 
+      }
+    }
+  }
+}
+.team-vGrid-circle_wn .single-member .featured-member-images{
+  border-color: $primary;
+  img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+  .hover-box .bottom-info-member{
+    color: $white !important;
+  }
+}
+.popup_vcard .modal-content{
+  button.close, #popup_vcard .modal-content button.close{
+    background-color: $primary !important;
+  } 
+  .side-right{
+    .name-member h3{
+      color: $primary !important;
+      text-transform: capitalize !important;
+    } 
+    .social-networks{
+      margin-top: 20px;
+      a{
+        margin-right: 10px;
+        i{
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  .side-left{
+    .position-member{
+      @include font1;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $black;
+    }
+  }
+}
+.team-vGrid-square-sm .single-member .featured-member-images{
+  background-color: $white !important;
+  img{
+    height: 100% !important;
+  }
+}
+.team-vGrid-circle .single-member, .team-vGrid-square .single-member{
+  &.col-lg-6{
+    .featured-member-images .hover-box .bottom-info-member{
+      padding: 10px 22% 30px;
+    }
+  }
+  .featured-member-images{
+    background-color: $white !important;
+    img{
+      height: 100% !important;
+    }
+    .hover-box{
+      .bottom-info-member .name-member h3{
+        font-size: 22px;
+        text-transform: capitalize !important;
+      }
+      .read-more-hover , .link-read-more{
+        color: $white !important;
+        border-bottom: none !important;
+        text-align: center;
+        .fa-plus-circle{
+          vertical-align: middle !important;
+        }
+        &:hover{
+          border-color: transparent !important;
+        }
+      }
+      .social-networks {
+        padding: 0 !important;
+        li{
+          display: inline-block !important;
+          padding: 0 !important;
+          a{
+            color: $white !important;
+            &:hover{
+              text-decoration: none !important;
+              border-color: transparent !important;
+            }
+          }
+          &::before{
+            content: none !important;
+          }
+        } 
+      }
+    }
+  }
+}
+.popup_vcard .modal-content{
+  button.close, #popup_vcard .modal-content button.close{
+    background-color: $primary !important;
+  } 
+  .side-right{
+    .name-member h3{
+      text-transform: capitalize !important;
+      color: $primary !important;
+    } 
+    .social-networks{
+      margin-top: 20px;
+      a{
+        margin-right: 10px;
+        i{
+          color: $primary !important;
+        }
+        &:hover{
+          border-color: transparent !important;
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+}
+
+@include mediaqueries(991max) {
+  .team-vGrid-square-sm,
+  .team-vGrid-circle, 
+  .team-vGrid-square{
+    .single-member{
+      &.col-lg-3, &.col-lg-4{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
+@include mediaqueries(767max) {
+  .team-vGrid-square-sm,
+  .team-vGrid-circle, 
+  .team-vGrid-square{
+    .single-member{
+      &.col-lg-3, &.col-lg-4{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
+@include mediaqueries(576max) {
+  .team-vGrid-square-sm,
+  .team-vGrid-circle, 
+  .team-vGrid-square{
+    .single-member{
+      &.col-lg-3, &.col-lg-4{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

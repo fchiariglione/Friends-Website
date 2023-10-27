@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.825" height="30.825" viewBox="0 0 30.825 30.825">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="plus" transform="rotate(-45 18.605 7.706)">
+        <g id="Group_1554" data-name="Group 1554">
+            <g id="Group_1553" data-name="Group 1553">
+                <path id="Path_11817" d="M10.9 0a10.9 10.9 0 1 0 10.9 10.9A10.911 10.911 0 0 0 10.9 0zm0 20.24a9.342 9.342 0 1 1 9.34-9.34 9.352 9.352 0 0 1-9.34 9.34z" class="cls-1" data-name="Path 11817"/>
+            </g>
+        </g>
+        <g id="Group_1556" data-name="Group 1556" transform="translate(10.12 5.709)">
+            <g id="Group_1555" data-name="Group 1555">
+                <path id="Path_11818" d="M238.492 134.1a.778.778 0 0 0-.778.778v8.822a.778.778 0 1 0 1.557 0v-8.823a.778.778 0 0 0-.779-.777z" class="cls-1" data-name="Path 11818" transform="translate(-237.714 -134.095)"/>
+            </g>
+        </g>
+        <g id="Group_1558" data-name="Group 1558" transform="translate(5.709 10.12)">
+            <g id="Group_1557" data-name="Group 1557">
+                <path id="Path_11819" d="M143.7 237.714h-8.823a.778.778 0 1 0 0 1.557h8.823a.778.778 0 1 0 0-1.557z" class="cls-1" data-name="Path 11819" transform="translate(-134.095 -237.714)"/>
+            </g>
+        </g>
+    </g>
+</svg>

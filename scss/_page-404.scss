@@ -1,0 +1,59 @@
+/*START Error Page------------------------------------------*/
+.interior-404{
+  padding-top: 40px;
+}
+.fourerror{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 590px;
+  max-width: 100%;
+  .ghost-404{
+    position: relative;
+    height: 230px;
+    margin: 0 auto;
+    width: 140px;
+    .ghost-icon,.ghost-base{
+      display: block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-color: transparent;
+      position: relative;
+      width: 130px;
+    }
+    .ghost-icon{
+      background-image: url('../images/icons/ghost.svg');      
+      height: 132px;
+    }
+    .ghost-base{
+      background-image: url('../images/icons/base-ghost.svg');
+      height: 17px;
+      margin-top: 30px;
+    }
+  }
+  h3{
+    @include font1;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+  p{
+    font-size: 24px !important;
+    text-align: center !important;
+    color: #000000 !important;;
+  }
+  a[class^="btn-"]{
+    margin: 40px auto;
+  }
+}
+
+/*END Error Page------------------------------------------*/

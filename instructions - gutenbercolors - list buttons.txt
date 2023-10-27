@@ -1,0 +1,34 @@
+
+"primary"       => "#B76F38",
+"primarylight"  => "#F29650",
+"primaryLight"  => "#F1C96D",
+"primarydark"   => "#803C07",
+"primaryDark"   => "#7E3F0F",
+"secondary"     => "#BADCDC",
+"secondarydark" => "#588F8E",
+"tertiary"      => "#213029",
+"tertiarydark"  => "#354728",
+"quaternary"    => "#EFEEE4",
+"grey"          => "#8C8C8C",
+"white"         => "#ffffff",
+"black"         => "#000000",
+"text"          => "#000000",
+"link"          => "#B76F38",
+"dark-text"     => "#213029",
+---------------------------------------------------------------
+ 
+Buttons List Select 
+
+btn-1 primary : Orange Button Text White Arrow 1
+btn-1 secondary : Blue Button Text White Arrow 1
+btn-1 tertiary : Green Button Text White
+btn-1 white : White Button Text Orange
+btn-2 primary : Button Text Orange Arrow 1 Block Orange
+btn-2 secondary : Button Text White Arrow 1 Block Dark Orange
+btn-2 tertiary : Button Text White Arrow 1 Block Orange
+btn-3 primary : Button Text Black  Arrow 2 hover Orange
+btn-3 secondary : Button Text Black  Arrow 2 hover Grey
+btn-3 tertiary : Grey Button Text Black  Arrow 2 Hover Orange
+btn-3 white : Button Text White  Arrow 2 Hover Orange
+
+---------------------------------------------------------------

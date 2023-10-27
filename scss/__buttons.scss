@@ -1,0 +1,435 @@
+/*START Buttons------------------------------------------ */
+$btn_b_radius: 0px;
+$btn_font_size1: 14px;
+$btn_font_weight1: 700;
+$btn_letter-spacing1: 0;
+$btn_line_height: 0.82;
+$btn_letter-spacing: 0.5px;
+$color_btn1: $white;
+$color_btn2: $primary;
+
+$selector_color: $primarylight;
+
+a, button, li{
+  &.btn-1{
+    background-color: transparent;
+    border-radius: $btn_b_radius !important;
+    border: none;
+    box-shadow: none;
+    color: $color_btn1;
+    cursor: pointer;
+    display: inline-block;
+    @include font2;
+    font-size: $btn_font_size1 !important;
+    font-stretch: normal !important;
+    font-style: normal;
+    font-weight: $btn_font_weight1 !important;
+    letter-spacing: $btn_letter-spacing1 !important;
+    line-height: $btn_line_height !important;
+    margin: 0;
+    overflow-wrap: break-word;
+    position: relative;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    &.primary{
+      padding: 12px 59px 12px 19px;
+      background-color: $primary !important;
+      color: $white;
+      transition: all 0.4s ease;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow-white.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 35px; 
+        height: 11.47px;
+        margin-left: 7px;
+
+      }
+      &:hover, &:focus,&:active{
+        background-color: $primarydark !important;
+        color: $primarylight;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow-primarylight.svg') !important;
+          transition: background-image 0.4s ease;
+        }
+      }
+    }
+    &.secondary{
+      padding: 12px 59px 12px 19px;
+      background-color: $secondary !important;
+      color: $tertiary;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow-black.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 35px; 
+        height: 11.47px;
+        margin-left: 7px;
+
+      }
+      &:hover, &:focus,&:active{
+        background-color: $secondarydark !important;
+        color: $white;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow-white.svg') !important;
+          transition: background-image 0.4s ease;
+        }
+      }
+    }
+    &.tertiary{
+      padding: 12px 19px;
+      background-color: $tertiary !important;
+      color: $white;
+      &:hover, &:focus,&:active{
+        background-color: $tertiarydark !important;
+      }
+    }
+    &.white{
+      padding: 12px 19px;
+      background-color: $white !important;
+      color: $primary;
+      &:hover, &:focus,&:active{
+        background-color: $primarylight !important;
+        color: $primarydark !important;
+      }
+    }
+  }
+
+  &.btn-2{
+    background-color: transparent;
+    border-radius: $btn_b_radius !important;
+    border: none;
+    box-shadow: none;
+    color: $color_btn1;
+    cursor: pointer;
+    display: inline-block;
+    @include font2;
+    font-size: $btn_font_size1 !important;
+    font-stretch: normal !important;
+    font-style: normal;
+    font-weight: $btn_font_weight1 !important;
+    letter-spacing: $btn_letter-spacing1 !important;
+    line-height: $btn_line_height !important;
+    margin: 0;
+    overflow-wrap: break-word;
+    position: relative;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+
+    &::selection {
+      background-color: $selector_color;
+      color: white;
+    }
+    &.primary{
+      padding: 12px 59px 12px 0px;
+      color: $primary;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow-primaryDark.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 35px; 
+        height: 11.47px;
+        margin-left: 7px;
+      }
+      &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $primarylight;
+        width: 31px;
+        height: 31px;
+        z-index: 0;
+        right: 5px;
+        top: 2.25px;
+      }
+      &:hover, &:focus,&:active{
+        padding: 12px 59px 12px 19px;
+        background-color: $primarydark !important;
+        color: $primarylight;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow-primarylight.svg') !important;
+          transition: background-image 0.4s ease;
+        }
+        &::before{
+          content: none;
+        }
+      }
+    }
+    &.secondary{
+      padding: 12px 59px 12px 0px;
+      color: $white;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow-white.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 35px; 
+        height: 11.47px;
+        margin-left: 7px;
+      }
+      &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $primarydark;
+        width: 31px;
+        height: 31px;
+        z-index: 0;
+        right: 5px;
+        top: 2.25px;
+      }
+      &:hover, &:focus,&:active{
+        padding: 12px 59px 12px 19px;
+        background-color: $primarydark;
+        &::before{
+          content: none;
+        }
+      }
+    }
+    &.tertiary{
+      padding: 12px 59px 12px 0px;
+      color: $white;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow-white.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 35px; 
+        height: 11.47px;
+        margin-left: 7px;
+      }
+      &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $primarylight;
+        width: 31px;
+        height: 31px;
+        z-index: 0;
+        right: 5px;
+        top: 2.25px;
+      }
+      &:hover, &:focus,&:active{
+        padding: 12px 59px 12px 19px;
+        background-color: $primarylight !important;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow-white.svg') !important;
+          transition: background-image 0.4s ease;
+        }
+        &::before{
+          content: none;
+        }
+      }
+    }
+
+
+
+  }
+  &.btn-3{
+    background-color: transparent;
+    border-radius: $btn_b_radius !important;
+    border: none;
+    box-shadow: none;
+    color: $color_btn1;
+    cursor: pointer;
+    display: inline-block;
+    @include font2;
+    font-size: $btn_font_size1 !important;
+    font-stretch: normal !important;
+    font-style: normal;
+    font-weight: $btn_font_weight1 !important;
+    letter-spacing: $btn_letter-spacing1 !important;
+    line-height: $btn_line_height !important;
+    margin: 0;
+    overflow-wrap: break-word;
+    position: relative;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+
+    &::selection {
+      background-color: $selector_color;
+      color: white;
+    }
+    &.primary{
+      color: $black;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow2-black.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease, background-position 0.4s ease-in-out;
+        width: 9px; 
+        height: 14.46px;
+        margin-left: 7px;
+      }
+      &:hover, &:focus,&:active{
+        color: $primary;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow2-primary.svg') !important;
+          transition: background-image 0.4s ease, background-position 0.4s ease-in-out;
+        }
+      }
+    }
+    &.secondary{
+      color: $black;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow2-black.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 9px; 
+        height: 14.46px;
+        margin-left: 7px;
+      }
+      &:hover, &:focus,&:active{
+        color: $grey;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow2-grey.svg') !important;
+          transition: background-image 0.4s ease, background-position 0.4s ease-in-out;
+        }
+      }
+    }
+    &.tertiary{
+      padding: 8px 39px 8px 18px;
+      color: $black;
+      background-color: $quaternary;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow2-black.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease;
+        width: 9px; 
+        height: 14.46px;
+        margin-left: 7px;
+      }
+      &:hover, &:focus,&:active{
+        color: $primary;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow2-primary.svg') !important;
+          transition: background-image 0.4s ease, background-position 0.4s ease-in-out;
+        }
+      }
+    }
+    
+    &.white{
+      padding: 12px 59px 12px 0px;
+      color: $white;
+      &::after{
+        content: "";
+        @include center(0, -50%);
+        background-image: url('../images/icons/icon-arrow2-white.svg') !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: unset;
+        left: unset;
+        position: absolute;
+        right: unset;
+        top: 51%;
+        transition: background-image 0.4s ease, background-position 0.4s ease-in-out;
+        width: 9px; 
+        height: 14.46px;
+        margin-left: 7px;
+      }
+      &:hover, &:focus,&:active{
+        padding: 12px 59px 12px 0px;
+        color: $primary;
+        &::after{
+          content: "";
+          @include center(0, -50%);
+          background-image: url('../images/icons/icon-arrow2-primary.svg') !important;
+          transition: background-image 0.4s ease, background-position 0.4s ease-in-out;
+        }
+      }
+    }
+    
+    
+  }
+}
+/*END Buttons-------------------------------------*/

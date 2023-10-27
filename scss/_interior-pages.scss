@@ -1,0 +1,911 @@
+$title_weight: 400;
+$font_size_text: 18px;
+$lineHeight_text: 1.33;
+$selector_color: $primarylight;
+
+$blockquote_sizeText: 24px;
+$blockquote_fontWeight: 500;
+
+/*Heading's Size Variables*/
+$h1_size_desktop: 52px;
+$h2_size_desktop: 40px;
+$h3_size_desktop: 38px;
+$h4_size_desktop: 28px;
+$h5_size_desktop: 22px;
+$h6_size_desktop: 18px;
+
+$h1_size_tablet: 50px;
+$h2_size_tablet: 30px;
+$h3_size_tablet: 28px;
+$h4_size_tablet: 26px;
+$h5_size_tablet: 24px;
+$h6_size_tablet: 20px;
+
+$h1_size_mobile: 35px;
+$h2_size_mobile: 30px;
+$h3_size_mobile: 25px;
+$h4_size_mobile: 22px;
+$h5_size_mobile: 20px;
+$h6_size_mobile: 18px;
+
+/*
+body:not(.page-template-default){
+  .page{
+    .entry-content{
+      //padding: 40px 0 20px;
+    }
+  }
+}
+*/
+.interior-page:not(.no-padding){
+  .content-page{
+    padding: 90px 15px;
+    @media (max-width: 1199.98px ) {
+      padding: 60px 15px !important;
+    }
+    @media (max-width: 575.98px) {
+      padding: 30px 15px !important;
+    }
+  }
+}
+.interior-page.no-padding{
+  padding: 0 !important;
+}
+.interior-page.single{
+  padding-top: 40px;
+}
+
+.tribe-events-single,
+#tribe-events,
+body:not(.post-type-archive-tribe_events),
+body:not(.single-tribe_events),
+body:not(.home),
+body.page-template-default:not(.home){
+  
+  .interior-page{
+    //@include font1;
+    //color: $text;
+    //position: relative;
+    .entry-content, .content-page{ 
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      .title-page, .sub-title{
+        @include font1;
+        color: $primary !important;
+        font-size: $h1_size_desktop;
+        font-stretch: normal;
+        font-weight: $title_weight;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        @media (max-width: 1199.98px){
+          font-size: $h1_size_tablet;
+        }
+        @media (max-width: 767.98px){
+          font-size: $h1_size_tablet;
+          margin-bottom: 20px !important;
+        }
+        @media (max-width: 575.98px){
+          font-size: $h1_size_mobile;
+        }
+      }
+      h1, h2, h3, h4{
+        @include font1;
+        font-stretch: normal;
+        font-weight: $title_weight;
+        line-height: 1.33;
+        margin-top: 0;
+        text-transform: none;
+        strong{
+            font-weight: $title_weight;
+        }
+        &:not(.has-text-color){
+            color: $black;
+        }
+        &::selection {
+            background-color: $selector_color;
+            color: white;
+        }
+        &.h1{
+            font-size: $h1_size_desktop;
+            margin-bottom: 24px;
+        }
+        &.h2{
+            font-size: $h2_size_desktop;
+            margin-bottom: 14px;
+        }
+        &.h3{
+            font-size: $h3_size_desktop;
+            margin-bottom: 14px;
+        }
+        &.h4{
+            font-size: $h4_size_desktop;
+            margin-bottom: 11px;
+        }
+        &.h5{
+            font-size: $h5_size_desktop;
+            margin-bottom: 30px;
+        }
+        &.h6{
+            font-size: $h6_size_desktop;
+            margin-bottom: 30px;
+        }
+      }
+      h5, h6{
+        @include font1;
+        font-stretch: normal;
+        font-weight: $title_weight;
+        text-transform: none; 
+        &:not(.has-text-color){
+          color: $text;
+        }
+        &::selection {
+          background-color: darken($selector_color, 10);
+          color: white;
+        }
+        strong{
+          &::selection {
+            background-color: darken($selector_color, 10);
+            color: white;
+          }
+        }
+        &.h2{
+          font-size: $h2_size_desktop;
+        }
+        &.h3{
+          font-size: $h3_size_desktop;
+        }
+        &.h4{
+          font-size: $h4_size_desktop;
+        }
+        &.h5{
+          font-size: $h5_size_desktop;
+        }
+        &.h6{
+          font-size: $h6_size_desktop;
+        }
+      }
+      h1{
+        @include font1;
+        font-size: $h1_size_desktop;
+        line-height: 1.15;
+        margin-bottom: 24px;
+        margin-top: 0;
+      }
+      h2{
+        font-size: $h2_size_desktop;
+      }
+      h3{
+        font-size: $h3_size_desktop;
+      }
+      h4{
+        font-size: $h4_size_desktop;
+      }
+      h5{
+        font-size: $h5_size_desktop;
+      } 
+      h6{
+        font-size: $h6_size_desktop;
+      }
+      hr{
+        border-color: $primary !important;
+        border-style: dashed none none;
+        border-width: 1px 0px 0px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+      }
+      p:not(.has-medium-font-size):not(.has-large-font-size):not(.has-small-font-size):not(.has-normal-font-size):not(.has-huge-font-size){
+        font-size: $font_size_text;
+      }
+      p{
+        @include font2;
+        color: $text;
+        font-stretch: normal;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: $lineHeight_text; 
+        margin-bottom: 22px;
+        overflow-wrap: break-word;
+        white-space: normal;
+        word-break: break-word;
+        strong{
+          @include font2;
+          color: $text;
+          font-size: $font_size_text;
+          font-weight: 700;
+          line-height: $lineHeight_text;
+        }
+        em{
+          @include font2;
+          font-size: $font_size_text;
+          font-style: italic;
+        }
+        &::selection {
+          background-color: $selector_color;
+          color: white;
+        }
+        strong, em, a, span{
+          margin: 0 !important;
+          &::selection {
+            background-color: darken($selector_color, 10);
+            color: white;
+          }
+        }
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+      blockquote, .wp-block-quote{
+        background-color: transparent;
+        border-bottom: solid 1px $grey;
+        border-top: solid 1px $grey;
+        padding: 20px 0;
+        p,strong,em,ul,ul > li,ol, ol > li,span, dl.list > dd, dl.list > dt , cite{
+          @include font2;
+          font-size: $blockquote_sizeText !important;
+          font-weight: $blockquote_fontWeight;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: -0.21px;
+          @media (max-width: 575.98px){
+            font-size: 20px !important;
+          }
+        }
+        cite{
+          font-weight: 500 !important;
+        }
+        .has-text-align-center{
+          p,strong,em,ul,ul > li,ol, ol > li,span, dl.list > dd, dl.list > dt , cite{
+            text-align: center !important;
+          }
+        }
+      } 
+      //a,
+      a:not([class*="btn-"])
+      :not([role="button"])
+      :not([rel="boxlink"])
+      :not([rel="bookmark"])
+      :not([rel="noopener"])
+      :not([class*="bbp-topic"])
+      :not(.tribe-events-calendar-month__calendar-event-title-link)
+      :not(.aos-init)
+      :not(.bbp-reply-permalink)
+      :not(.bbp-author-link)
+      :not(.subscription-toggle)
+      :not(.favorite-toggle){
+        @include font1;
+        color: $link;
+        font-size: $font_size_text;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: $lineHeight_text;
+        text-decoration: underline;
+        transition-duration: 0.4s;
+        transition-property: color;
+        &:hover{
+          color: $tertiary;
+        }
+        &::selection {
+          background-color: $selector_color;
+          border-color: white;
+          color: white;
+        }
+        strong{
+          line-height: $lineHeight_text;
+          color: $link;
+        }
+      }
+      a[rel=external]{
+        position: relative;
+        &::before {
+          content: '\f35d';
+          font-family: "Font Awesome 5 Free"; 
+          font-weight: 900;
+          display: inline-block;
+          font-variant: normal;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          /*--adjust as necessary--*/
+          color: $link;
+          position: relative;
+          font-size: 16px;
+          padding-right: 5px;
+          margin-left: 7px;
+        }
+      }
+
+      .image-wrapping, .image-post-thumb, .post-image-css{
+        margin-bottom: 20px;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative; /* If you want text inside of it */
+        img , .wrapped-image{
+          @include center(-50%,-50%);
+          height: 100%;
+          left: 50%;
+          object-fit: cover;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          &.image-fit-contain{
+            object-fit: contain !important;
+          }
+          &.top{
+            object-position: top;
+          }
+          &.center{
+            object-position: center;
+          }
+          &.bottom{
+            object-position: bottom;
+          }
+        }
+      }
+      .image-fit-cover{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .image-fit-contain{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+
+      /*--- Images With Caption (wordpress) ---*/ 
+      .wp-caption{
+        display: block;
+        max-width: 100%;
+        img{
+          display: block;
+          margin: 0 auto 10px;
+          max-width: 100%;
+          width: 100%;
+        }   
+        .wp-caption-text{
+          @include font2;
+          color: $text !important;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          font-weight: normal;
+          letter-spacing: 0.2px;
+        }    
+      }/*--- Images With Caption (wordpress) ---*/ 
+
+      figure{
+        //margin-bottom: 0 !important;
+        a{
+          border: none !important;
+        }
+        img{
+          max-width: 100%;
+        }
+        figcaption{
+          @include font2;
+          color: $black;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          font-weight: normal;
+          letter-spacing: 0.2px;
+          line-height: 1.33;
+          strong{
+            font-weight: 700;
+            &::selection {
+              background-color: $selector_color;
+              color: white;
+            }
+          }
+          &::selection {
+            background-color: $selector_color;
+            color: white;
+          }
+        }
+      }
+      /*---- Table Styles ----*/
+      .table-responsive{
+        .table, table{
+          tr{
+            td{
+              a{
+                display: inline !important;
+              }
+            }
+            &:nth-child(even){
+              td{
+                padding: 10px 15px;
+              }
+            }  
+            &:nth-child(odd){
+              td{
+                padding: 10px 15px;
+              }
+            }
+          }
+        }
+      }/*---- Table Styles ----*/
+      figure.wp-block-embed-youtube{
+        height: 600px;
+        width: 100%;
+        .wp-block-embed__wrapper{
+          height: 600px;
+          iframe{
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      /*--- Undesorder List ---*/
+      ul:not(.list):not(.job_types){
+        padding-left: 15px;
+        list-style-type: disc;
+        margin-top: 20px;
+        li{
+          @include font2;
+          color: $text;
+          font-size: $font_size_text;
+          font-weight: normal;
+          line-height: $lineHeight_text;
+          a{
+            text-decoration: underline !important;
+          }
+          ul, ol{
+            li{
+              margin-top: 0 !important;
+              color: $text;
+            }
+          }
+        }
+      }
+      .bg-primary-color{
+        ul:not(.list):not(.job_types), ol:not(.list):not(.carousel-indicators){
+          li{
+            color: $white;
+            &::marker{
+              color: $white;
+            }
+            a{
+              color: $primaryLight;
+            }
+            ul, ol{
+              li{
+                color: $white;
+                a{
+                  color: $primaryLight;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bg-secondary-color{
+        ul:not(.list):not(.job_types), ol:not(.list):not(.carousel-indicators){
+          li{
+            color: $dark-text;
+            &::marker{
+              color: $dark-text;
+            }
+            a{
+              color: #107E7E;
+            }
+            ul, ol{
+              li{
+                color: $dark-text;
+                &::marker{
+                  color: $dark-text;
+                }
+                a{
+                  color: #107E7E;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bg-quaternary-color{
+        ul:not(.list):not(.job_types), ol:not(.list):not(.carousel-indicators){
+          li{
+            color: $tertiarydark;
+            &::marker{
+              color: $tertiarydark;
+            }
+            a{
+              color: $primarylight;
+            }
+            ul, ol{
+              li{
+                color: $tertiarydark;
+                &::marker{
+                  color: $tertiarydark;
+                }
+                a{
+                  color: $primarylight;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bg-secondarydark-color, .bg-secondaryDark-color{
+        ul:not(.list):not(.job_types), ol:not(.list):not(.carousel-indicators){
+          li{
+            color: $white;
+            &::marker{
+              color: $white;
+            }
+            a{
+              color: $secondary;
+            }
+            ul, ol{
+              li{
+                color: $white;
+                &::marker{
+                  color: $white;
+                }
+                a{
+                  color: $secondary;
+                }
+              }
+            }
+          }
+        }
+      }
+      ul.list{
+        padding: 0 !important;
+        br{
+          display: none;
+        }
+        > li{
+          @include font2;
+          color: $text;
+          font-size: $font_size_text;
+          font-stretch: normal;
+          font-weight: normal;
+          letter-spacing: -1.14px;
+          line-height: $lineHeight_text;
+          list-style-type:none; 
+          margin: 0;
+          padding-left: 15px;
+          position: relative;
+          text-align: left;
+          &::marker{
+            content: none;
+          }
+          &::before{
+            content:"";
+            background: $primary;
+            border-radius: 50%;
+            display: inline-block;
+            left: 0;
+            margin-left: 0;
+            margin-right: 5px;
+            margin-top: 5px;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            top: 8px;
+
+          }
+          &::selection {
+            background-color: $selector_color;
+            color: white;
+          }
+          a{
+            @include font2;
+            color: $link; 
+            font-size: $font_size_text;
+            font-weight: 400;
+            letter-spacing: -0.14px;
+            line-height: $lineHeight_text;
+            text-align: left;
+            text-decoration: underline;
+          }
+          p{
+            @include font2;
+            color: $text;
+            font-size: $font_size_text;
+            font-stretch: normal;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            line-height: $lineHeight_text;
+            text-align: left;
+            &::selection {
+              background-color: $selector_color;
+              color: white;
+            }
+            strong{
+              color: $text;
+              font-size: $font_size_text;
+              font-weight: 400;
+              line-height: $lineHeight_text;
+            }
+          }
+          ul{
+            padding-left: 15px;
+          }
+          ol{
+            padding: 0;
+            li{
+              @include font2;
+              color: $text;
+              font-size: $font_size_text;
+              line-height: $lineHeight_text;
+              padding-left: 0;
+              margin-bottom: 0.6em;
+              position: relative;
+              &::marker{
+                @include font2;
+                background: transparent;
+                border-radius: 0;
+                color: $text;
+                display: inline-block;
+                font-size: $font_size_text;
+                font-weight: 400;
+                left: 0;
+                padding-right: 0;
+                position: absolute;
+                top: 0;
+              }
+            }
+          }
+        }
+      }/*--- Undesorder List ---*/
+      /*--- Order List ---*/
+      ol:not(.list):not(.carousel-indicators){
+        padding: 0 0 0 30px;
+        counter-reset: listitems;
+        > li{
+          @include font2;
+          font-size: $font_size_text;
+          line-height: $lineHeight_text;
+          padding-left: 0;
+          position: relative;
+          color: $text;
+          counter-increment: listitems;
+          &::marker{
+            content: counters(listitems, ".") ". ";
+          }
+          a{
+            padding: 0;
+            color: $primary;
+            text-decoration: underline;
+          }
+          ul{
+            list-style-type: disc;
+            margin-top: 0;
+            li{
+              margin-top: 0;
+              
+            }
+          }
+        }
+      }
+      
+      ol.list{
+        counter-reset: item;
+        list-style-type: none;
+        margin-bottom: 1rem;
+        padding: 0;
+        position: relative;
+        > li {
+          display: table;
+          counter-increment: item;
+          margin-bottom: 0.6em;
+          &:before {
+            content: counters(item, ".") ". ";
+            padding-right: 0.6em;
+          }
+          ol > li:before {
+            content: counters(item, ".") " ";
+            position: relative;
+            display: inline-block;
+            padding-right: 0.6em;
+          }
+        }
+        li{
+          @include font2;
+          color: $primary;
+          font-size: $font_size_text;
+          line-height: $lineHeight_text;
+          list-style-type:none; 
+          //margin-bottom: 0;
+          margin-left: 0;
+          padding-left: 20px;
+          position: relative;
+          margin-bottom: 0.6em;
+          &::selection {
+            background-color: $selector_color;
+            color: white;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            margin-top: 0 !important;
+            display: inline-block !important;
+          }
+          a{
+            padding: 0;
+          }
+          &::before {
+            @include font2;
+            background: transparent;
+            border-radius: 0;
+            color: $text;
+            display: inline-block;
+            font-size: $font_size_text;
+            font-weight: 400;
+            left: 0;
+            padding-right: 0;
+            position: absolute;
+            top: 0;
+          }
+          ol{
+            margin-top: 10px;
+            li{
+              padding-left: 20px;
+            }
+          }    
+        }
+      }
+      /*----- Order List ----- */
+      /*--- Definition List ---*/
+      dl.list{
+        dt{
+          @include font2;
+          color: $primary;
+          font-size: $font_size_text;
+          font-weight: 400;
+          font-stretch: normal;
+          line-height: $lineHeight_text;
+          letter-spacing: -0.14px;
+          margin-bottom: 10px;
+          &.h3{
+            font-size: 36px;
+          }
+          &.h4{
+            font-size: 30px;
+          }
+          &.h5{
+            font-size: 28px;
+          }
+          &.h6{
+            font-size: 24px;
+          }
+        }
+        dd{
+          @include font2;
+          color: $text !important;
+          font-size: $font_size_text;
+          line-height: $lineHeight_text;
+          margin-bottom: 0px;
+          margin-left: 5px;
+          padding-left: 20px;
+          position: relative;
+          &::before{
+            content:"";
+            border-radius: 50%;
+            background: $primary;
+            display: inline-block;
+            left: 0;
+            margin-left: 0;
+            margin-right: 5px;
+            margin-top: 10px;
+            position: absolute;
+            width: 5px; height: 5px;
+          }
+          dl{
+            margin-top: 10px;
+            //dd{}
+          }
+        }
+      }/*--- Definition List ---*/
+    } /*---entry-content----*/
+  }
+}
+
+@include mediaqueries(767max) {
+  .interior-page .entry-content, .page-template-default:not(.home) , .page-template:not(.home){
+    h1, h2, h3{
+      word-break: break-word;
+      white-space: normal;
+      overflow-wrap: break-word;
+      strong{
+        //word-break: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+      }
+    }
+    h1{
+      font-size: $h1_size_mobile;
+      margin-bottom: 24px;
+    }
+    h2{
+        font-size: $h2_size_mobile !important;
+        margin-bottom: 14px;
+    }
+    h3 {
+        font-size: $h3_size_mobile !important;
+        margin-bottom: 14px;
+    }
+    h4{
+        font-size: $h4_size_mobile;
+        margin-bottom: 15px;
+    }
+    h5{
+        font-size: $h5_size_mobile;
+        margin-bottom: 30px;
+    }
+    h6{
+        font-size: $h6_size_mobile;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        margin-bottom: 22px;
+    }
+    blockquote, blockquote p{
+      font-size: $font_size_text;
+      margin: 30px auto 20px;
+    }
+    ul.list li a{
+      word-break: break-all;
+      strong{
+        word-break: break-all;
+      }
+    }
+    ol li a{
+      word-break: break-all;
+      strong{
+        word-break: break-all;
+      }
+    }
+  }
+  .interior-page, .single-tribe_events, .single-event, .page-template-default:not(.home) , .page-template:not(.home){
+    p {
+      margin-bottom: 15px;  
+    }
+    blockquote{
+      font-size: $h4_size_mobile !important;
+      margin: 0 auto 20px !important;
+      text-align: center!important;
+      padding: 20px 30px!important;
+      min-height: inherit!important;
+      p,a,address,span,strong,time, dl.list > dd, dl.list > dt{
+        font-size: $h4_size_mobile !important;
+        margin: 0 auto !important;
+        text-align: center!important;
+        width: 100%;
+      }
+      cite{
+        margin-top: 10px;
+        display: block;
+      }
+    }
+    .entry-content{
+      figure.wp-block-embed-youtube{
+        height: 250px !important;
+        width: 100%;
+        .wp-block-embed__wrapper{
+          height: 250px !important;
+          iframe{
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@include mediaqueries(576max) {
+  .wp-block-image .alignright, .wp-block-image .alignleft{
+    float: none !important;
+    margin: 0 auto 20px;
+    display: block;
+    text-align: center;
+  } 
+}
+
+/*END INTERIOR PAGE-------------------------------------------------------------------------------------------*/

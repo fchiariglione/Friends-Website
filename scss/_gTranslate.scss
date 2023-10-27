@@ -1,0 +1,91 @@
+#gtranslate_selector{
+  @include font1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../images/icons/chevron-dropdown-white.svg') 95%/10px no-repeat transparent;
+  border-radius: 0;
+  border: none !important;
+  color: #ffffff;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  line-height: 1.5 !important;
+  padding: 4px 25px 3px 0 !important;
+  text-align: left;
+  transition: all 0.4s ease;
+  margin: 0;
+  option{
+    color: $primarydark !important;
+  }
+  @media (max-width: 1199.98px){
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    color: $primarydark;
+    background: url('../images/icons/chevron-dropdown-primarydark.svg') 95%/10px no-repeat transparent;
+    option{
+      color: $primarydark;
+    }
+  }
+}
+
+a.glink span{
+  @include font1;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: $primarydark !important;
+  margin-left: 5px;
+}
+
+.g-translate{
+  position: relative;
+  .switcher{
+    @include font1; 
+    width: 110px !important;
+    position: relative;
+    overflow: visible;
+    .selected a{
+      background-position-x: 100px !important;
+    }
+    .selected a, .selected a:hover{
+      width: 110px !important;
+      border-color: #fff !important;
+      background-color: #fff !important;
+      padding: 0 !important;
+    }
+    .option{
+      background-color: #fff !important;
+      border-color: #fff !important;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: 0;
+      width: 110px !important;
+      a.selected {
+        background: $white !important;
+        color: $primarydark !important;
+      }
+    }
+  }
+}
+
+.gt_white_content .gt_languages {
+  column-count: 1;
+  column-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@include mediaqueries(1200max) {
+  .g-translate{
+    flex-basis: 100%;
+  }
+}

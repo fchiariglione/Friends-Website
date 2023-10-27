@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--FontAwesome-->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="aos-animation/aos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Quando&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Homepage</title>
+
+  </head>
+
+  <body class="home">
+
+    <header class="header fixed-top"> 
+      <section class="search-section">
+        <div class="container">
+          <div class="search">
+            <form method="get" id="searchform" class="searchform" action="\">
+                <div>
+                <label class="screen-reader-text" for="s">Search for:</label>
+                <input type="text" value="" name="s" id="s">
+                <input type="submit" id="searchsubmit" value="Search">
+                </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="header-navigation">
+      <!-- Menu Navigation -->  
+        <div class="container">
+          <nav class="navbar navbar-expand-xl">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/">
+                <img src="images/logo.svg" alt="logo" class="navbar-brand-desktop">
+                <img src="images/logo-color.svg" alt="logo" class="navbar-brand-fixed">
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#NavDropdown" aria-controls="NavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Menu</span>
+              </button>
+            </div>
+            <div class="col-middle"> 
+            
+              <div class="header-bottom d-flex justify-content-end align-items-center"> 
+                <div class="collapse navbar-collapse" id="NavDropdown">
+
+                  <div class="height-wrap">
+
+                    <div class="header-top">
+                      <div class="column-heder-top icon-menu-news">
+                        <span class="header-top-link">
+                          <a href="#" class="news">news</a>
+                        </span>
+                      </div>
+                      <div class="column-heder-top icon-menu-contact">
+                        <span class="header-top-link">
+                          <a href="#" class="contact">Contact Us</a>
+                        </span>
+                      </div>
+                      <div class="column-heder-top icon-menu-shop">
+                        <span class="header-top-link">
+                          <a href="#" class="shop">shop</a>
+                        </span>
+                      </div>
+                      <div class="column-heder-top icon-menu-login">
+                        <span class="header-top-link">
+                          <a href="#" class="login">login</a>
+                        </span>
+                      </div>
+                      <div class="column-heder-top icon-menu-search">
+                        <span class="header-top-link">
+                          <button id="open-search"><span class="label sr-only">Search</span></button>
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <ul id="menu-main-menu" class="nav navbar-nav">
+                      <li id="menu-item-1" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1496 dropdown active">
+                        <a title="" href="/" class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Our Programs</a>
+                        <ul role="menu" class="dropdown-menu" >
+                          <li id="menu-item-1497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1497">
+                            <a title="LPTC &amp; Winnebago public library" href="/lptc-winnebago-public-library/">LPTC &amp; Winnebago public library</a>
+                          </li>
+                          <li id="menu-item-1499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499 dropdown">
+                            <a title="Community blog" href="/community-blog/">Community blog</a>
+                            <ul role="menu" class="dropdown-menu">
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                            </ul>
+                          </li>
+                          <li id="menu-item-1500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500">
+                            <a title="Bookstore" href="/bookstore/">Mattress Recycling</a>
+                          </li>
+                          <li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501">
+                            <a title="LPTC radio" href="/lptc-radio/">Contact Us</a>
+                          </li>
+                          <li id="menu-item-1505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505">
+                            <a title="Ho Chunk community development" href="/ho-chunk-community-development/">Ho Chunk community development</a>
+                          </li>
+                          <li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506">
+                            <a title="LPCT Extension" href="/lpct-extension/">LPCT Extension</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item-2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-">
+                        <a title="" href="/" class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Alumni Community</a>
+                      </li>
+                      <li id="menu-item-3" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1496 dropdown">
+                        <a title="Community Resources" href="/community-resources/" class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">About Us</a>
+                      </li>
+                      <li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-">
+                        <a title="" href="/" class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Get Involved</a>
+                      </li>
+                      <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-">
+                        <a title="" href="/" class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Need help?</a>
+                      </li>
+                      <li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1496 dropdown">
+                        <a title="" href="/" class="dropdown-toggle" data-hover="dropdown" aria-haspopup="true">Donate</a>
+                        <ul role="menu" class="dropdown-menu" >
+                          <li id="menu-item-1497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1497">
+                            <a title="LPTC &amp; Winnebago public library" href="/lptc-winnebago-public-library/">LPTC &amp; Winnebago public library</a>
+                          </li>
+                          <li id="menu-item-1499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499 dropdown">
+                            <a title="Community blog" href="/community-blog/">Community blog</a>
+                            <ul role="menu" class="dropdown-menu">
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                              <li><a title="Bookstore" href="/bookstore/">Bookstore</a></li>
+                            </ul>
+                          </li>
+                          <li id="menu-item-1500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500">
+                            <a title="Bookstore" href="/bookstore/">Mattress Recycling</a>
+                          </li>
+                          <li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501">
+                            <a title="LPTC radio" href="/lptc-radio/">Contact Us</a>
+                          </li>
+                          <li id="menu-item-1505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505">
+                            <a title="Ho Chunk community development" href="/ho-chunk-community-development/">Ho Chunk community development</a>
+                          </li>
+                          <li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506">
+                            <a title="LPCT Extension" href="/lpct-extension/">LPCT Extension</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul id="menu-secondary-menu" class="menu-secondary no-nav">
+                      <li><a href="">join</a></li>
+                      <li><a href="">renew</a></li>
+                      <li><a href="">donate</a></li>
+                    </ul>
+
+                  </div>
+                </div> 
+              </div>
+            </div> 
+          </nav> 
+        </div> <!-- container -->
+      </section>
+    </header>
+
+    <main role="main">
+      <div class="entry-content">
+
+      <section class="section-banner-home">
+        <div class="bg-section mask">
+          <img src="images/banner.jpg" alt="">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-8">
+              <div class="content-block light-color">
+                <h2>Building a community that makes a difference</h2>
+                <div class="main-content">
+                  <p>Our mission is to promote the conservation, appreciation, and sustainable enjoyment of the Middlesex Fells Reservation.</p>
+                </div>
+                <div class="btn-container">
+                  <a href="#" target="" class="btn-1 secondary">Join us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Renew Yourself -->
+      <section class="d-none renewYourself">
+        <span class="renew-birds d-none d-xl-block"></span>
+        <div class="bg-section mask d-none d-md-block">
+          <img src="images/renew-bg.jpg" alt="">
+        </div>
+        <div class="container renewYourself-container">
+          <div class="subheader-secion">
+            <img src="images/icons/clock-ornament.png" alt="" height="100" width="227.37" class="subheader-icon d-none d-md-block">
+            <img src="images/icons/clock-secondarydark.png" alt="" height="44.34" width="31.8" class="subheader-icon">
+            <span class="subheader-title d-block d-md-none">Visit the fells</span>
+          </div>
+          <div class="row renew-row">
+            <div class="col-12 col-xl-6">
+              <span class="renew-title">
+                <h2>Renew yourself <br>
+                  in the Fells</h2>
+              </span>
+            </div>
+          </div>
+          <div class="row renew-row">
+            <div class="offset-xl-1 col-xl-5 renew-text">
+              <p>Learn more about our trails, review the guidelines, and get a map of the over 2,200 acres of forests, meadows, and reservoirs.</p>
+            </div>
+            <span class="btn-container"><a href="" class="btn-2 primary">Plan Your Trip</a></span>
+          </div>
+        </div>
+        <span class="renew-ornament"></span>
+      </section>
+
+      <!-- Experience Nature -->
+
+      <section class="experienceNature">
+        <div class="bg-section mask d-none d-xl-block">
+          <img src="images/experience-nature-banner.jpg" alt="" class="sub-title-icon">
+        </div>
+        <div class="container experienceNature-container">
+          <div class="subheader-secion">
+            <img src="images/icons/pine-cone.svg" alt="" height="38" width="35" class="subheader-icon">
+            <span class="subheader-title">Explore with Us</span>
+          </div>
+          <div class="row experienceNature-container-content">
+            <div class="experienceNature-container-content-title offset-0 offset-md-1 offset-xl-0  col-12 col-md-7 col-xl-8">
+              <h2>Experience Nature At Its Best</h2>
+            </div>
+            <div class="btn-experiece offset-md-1 offset-xl-0 col-12 col-xl-4 "><a href="" class="btn-2 tertiary">See our Calendar</a></div>
+            <div class="experienceNature-container-content-text offset-md-1">
+              <p>Join us on guided hikes, attend our special events, and sign up for our summer Fells Forest Camp.</p>
+            </div>
+            <div class="offset-xl-2 col-xl-10 experienceNature-boxes">
+             
+              <a href="#" class="experienceNature-boxes-item" rel="boxlink">
+                <div class="experienceNature-boxes-item-image">
+                  <img src="images/blog-img-1.jpg" alt="">
+                </div>
+                <div class="experienceNature-boxes-item-content">
+                  <span class="date">11/15/21</span>
+                  <span class="title">Babes in the Woods</span>
+                  <span class="excerpt line-clamp-4"><p>I’m a description of no more than 20 words. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et leo duis ut diam.</p></span>
+                  <button class="btn-3 tertiary">Learn More</button>
+                </div>
+              </a>
+              <a href="#" class="experienceNature-boxes-item" rel="boxlink">
+                <div class="experienceNature-boxes-item-image">
+                  <img src="images/blog-img-1.jpg" alt="">
+                </div>
+                <div class="experienceNature-boxes-item-content">
+                  <span class="date">11/15/21</span>
+                  <span class="title">Babes in the Woods</span>
+                  <span class="excerpt line-clamp-4"><p>I’m a description of no more than 20 words. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et leo duis ut diam.</p></span>
+                  <button class="btn-3 tertiary">Learn More</button>
+                </div>
+              </a>
+              <a href="#" class="experienceNature-boxes-item" rel="boxlink">
+                <div class="experienceNature-boxes-item-image">
+                  <img src="images/blog-img-1.jpg" alt="">
+                </div>
+                <div class="experienceNature-boxes-item-content">
+                  <span class="date">11/15/21</span>
+                  <span class="title">Babes in the Woods</span>
+                  <span class="excerpt line-clamp-4"><p>I’m a description of no more than 20 words. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et leo duis ut diam.</p></span>
+                  <button class="btn-3 tertiary">Learn More</button>
+                </div>
+              </a>
+              <a href="#" class="experienceNature-boxes-item" rel="boxlink">
+                <div class="experienceNature-boxes-item-image">
+                  <img src="images/blog-img-1.jpg" alt="">
+                </div>
+                <div class="experienceNature-boxes-item-content">
+                  <span class="date">11/15/21</span>
+                  <span class="title">Babes in the Woods</span>
+                  <span class="excerpt line-clamp-4"><p>I’m a description of no more than 20 words. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et leo duis ut diam.</p></span>
+                  <button class="btn-3 tertiary">Learn More</button>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <span class="experienceNature-ornament d-none d-md-block"></span>
+
+      </section>
+
+      <!-- Understanding the Ecology -->
+      
+      <section class="understandingEcology">    
+        <div class="container understandingEcology-container">
+          <span class="understandingEcology-birds"></span>
+          <div class="subheader-secion">
+            <img src="images/icons/fungi.svg" alt="" height="38" width="35" class="subheader-icon">
+            <span class="subheader-title">Caring for the Fells</span>
+          </div>
+          <div class="row understandingEcology-row">
+            <div class="col-12 col-xl-6">
+              <div class="understandingEcology-content">
+                <div class="understandingEcology-content-title">
+                  <h2>Understanding <br> the ecology of the Fells</h2>
+                </div>
+                <div class="understandingEcology-content-text ">
+                  <p>Find out more about the challenges afflicting the Fells, and what we are doing to make the Fells better.</p>
+                </div>
+                <div class=btn-understanding>
+                  <a href="" class="btn-1 primary">See our projects</a>
+                  <a href="" class="btn-1 secondary">See our impact</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-5">
+              <div class="understanding-takeAction">
+                <div class="takeAction-header">
+                  <img src="images/favicon.png" alt="" height="46" width="46">
+                  <h4>Want to Take Action?</h4>
+                </div>
+                <div class="advocacyAlert">
+                  <div class="featureNews">
+                    <span class="featureNews-header">
+                      <h6>Current Advocacy Alert</h6>
+                    </span>
+                    <span class="line-texture d-none d-xl-block"></span>
+                    <span class="d-none d-md-block"><img src="images/icons/binoculars.png" alt=""></span>
+                    <span class="featureNews-calendar">Dec 13, 2021</span>
+                    <span class="featureNews-text">Featured Advocacy Alert Ipsum Dolor Sit Amet</span>
+                    <span class="btn-container"><a href="" class="btn-3 tertiary">Take action</a></span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Join Us -->
+      <section class="joinUs">
+        <div class="container joinUs-container">
+          <div class="subheader-secion">
+            <img src="images/icons/backpack.png" alt="" height="67" width="45" class="subheader-icon">
+            <span class="subheader-title">Explore with Us</span>
+          </div>
+          <div class="row joinUs-container-content">
+            <div class="joinUs-container-content-textblock col-12 col-md-7 col-xl-8">
+              <h2>Come join us!</h2>
+              <p>Find out how to connect with our community.</p>
+              <div class="joinUs-container-content-title">
+              </div>
+              <div class="joinUs-container-content-text">
+              </div>
+            </div>
+            <div class="btn-joinUs col-12 col-xl-4 "><a href="" class="btn-2 primary">More Ways To Get Involved</a></div>
+            <div class="joinUs-boxes">
+              <div class="joinUs-boxes-item">
+                <span class="joinUs-boxes-item-image"><img src="images/icons/mugs.png" alt="" width="97.43" height="64.95"></span>
+                <h6 class="joinUs-boxes-item-title">Become A Member</h6>
+                <p class="joinUs-boxes-item-text">Get access to special events, stylish gear, and other privileges TBD.</p>
+                <span class="joinUs-boxes-item-btn"><a href="" class="btn-3 primary">Learn More</a></span>
+              </div>
+              <div class="joinUs-boxes-item">
+                <span class="joinUs-boxes-item-image"><img src="images/icons/hearts.png" alt="" width="90" height="51"></span>
+                <h6 class="joinUs-boxes-item-title">Donate Today</h6>
+                <p class="joinUs-boxes-item-text">Help fund our programming that benefits the ecology of the Fells and the community surrounding it.</p>
+                <span class="joinUs-boxes-item-btn"><a href="" class="btn-3 primary">Learn More</a></span>
+              </div>
+              <div class="joinUs-boxes-item">
+                <span class="joinUs-boxes-item-image"><img src="images/icons/hands.png" alt="" width="96" height="61"></span>
+                <h6 class="joinUs-boxes-item-title">Volunteer With Us</h6>
+                <p class="joinUs-boxes-item-text">Sign up to assist with hikes, remove invasive species, clean up trails—all kinds of opportunities!</p>
+                <span class="joinUs-boxes-item-btn"><a href="" class="btn-3 primary">Learn More</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="joinUs-tree1 d-none d-xl-block"></span>
+        <span class="joinUs-tree2 d-block d-xl-none"></span>
+      </section>
+
+      <!-- Recent News -->
+
+      <section class="recentNews">
+        <div class="container recentNews-container">
+          <div class="row recentNews-row">
+            <span class="recentNews-icon"><img src="images/icons/map.png" alt=""></span>
+            <span class="recentNews-image d-none d-md-block"><img src="images/recentNews-titleImage.png" alt=""></span>
+            <div class="offset-xl-1 py-xl-5 recentNews-title">
+              <h2>Recent News</h2>
+            </div>
+          </div>
+          <div class="row recentNews-content">
+            <div class="featureNews">
+              
+              <div class="featureNews-header">
+                <div class="featureNews-header-imagecontainer"><img src="images/recentNews-1.jpg" alt=""></div>
+              </div>
+              <span class="featureNews-calendar"><a href="">Posted: 10/11/2021</a></span>
+              <span class="featureNews-text">Featured Story Lorem Ipsum Dolor Sit Amet</span>
+              <span class="category"><a href="">Category</a></span>
+            </div>
+            <div class="featureNews">
+              <div class="featureNews-header">
+                <div class="featureNews-header-imagecontainer"><img src="images/recentNews-2.jpg" alt=""></div>
+              </div>
+              <span class="featureNews-calendar"><a href="">Posted: 10/11/2021</a></span>
+              <span class="featureNews-text">Featured Story Lorem Ipsum Dolor Sit Amet</span>
+              <span class="category"><a href="">Category</a></span>
+            </div>
+            <div class="featureNews">
+              <div class="featureNews-header">
+                <div class="featureNews-header-imagecontainer"><img src="images/recentNews-3.jpg" alt=""></div>
+              </div>
+              <span class="featureNews-calendar"><a href="">Posted: 10/11/2021</a></span>
+              <span class="featureNews-text">Featured Story Lorem Ipsum Dolor Sit Amet</span>
+              <span class="category"><a href="">Category</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     </div>
+  </main>
+    
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo-footer">
+          <a href="#"><img src="images/logo.png" alt="" width="182.61" height="61.87"></a>
+        </div>
+        <span class="footer-top-map d-none d-xl-block">
+          <img src="images/footer-map.svg" alt="">
+        </span>
+        <div class="column1">
+          <div class="footer-info">
+            <span class="footer-info-map d-none d-xl-block"><img src="images/footer-map-2.svg" alt=""></span>
+            <span class="footer-newsletter-title my-2">
+              Always stay up-to-date.<br>Join our Newsletter.
+            </span>
+            <form action="">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email Address">
+            </form>
+            <span class="btn-container my-3"><a href="" class="btn-1 tertiary">Sign Me Up</a></span>
+          </div>
+        </div>
+        <div class="footer-menu-links">
+          <div class="column2">
+            <p>Address line 1 <br>
+              Address line 2 <br>
+              City, CA, 90000
+            </p>
+            <span class="flex-contact">
+              <a href="tel:123-456-7890">123-796-7890</a>
+              <a href="mailto:info@email.org">info@email.org</a>
+            </span>
+          </div>
+          <div class=" column3">
+            <ul class="menu-footer">
+              <li><a href="#">visit the fells</a></li>
+              <li><a href="#">explore with us</a></li>
+              <li><a href="#">care for the fells</a></li>
+              <li><a href="#">get invovled</a></li>
+              <li><a href="#">about us</a></li>
+            </ul>
+          </div>
+          <div class="column4">
+            <ul class="menu-impact">
+              <li><a href="#">impact reports</a></li>
+              <li><a href="#">Quick Link 2</a></li>
+              <li><a href="#">Quick Link 3</a></li>
+              <li><a href="#">Quick Link 4</a></li>
+              <li><a href="#">Quick Link 5</a></li>
+            </ul>
+          </div>
+          <div class="column5">
+            <ul class="footer-cta">
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Renew</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </div>
+          <span class="footer-birds d-none d-xl-block"><img src="images/footer-birds.svg" alt=""></span>
+        </div>
+      </div>
+    <div class="row-social d-flex d-md-none">
+      <div class="title">Follow Us: </div>
+      <ul class="social-network">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+      <span class="copy-r">
+        Copyright 2022 | Friends of the Middlesex Fells Reservation, Inc.
+      </span>
+      <span class="created-by">
+        <a href="http://www.elevationweb.org/" target="_blank" title="Websites for nonprofits">Nonprofit Website Design by <strong>Elevation Web</strong></a>
+      </span>
+      <span class="row-social d-none d-md-flex">
+        <div class="title">Follow Us: </div>
+        <ul class="social-network">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </span>
+    </div>
+    </div>
+    <span class="footer-bg d-none d-xl-block"></span>
+  </footer>
+
+    <!--script-->  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap4.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="swiper/swiper.min.js"></script>
+    
+    <!--AOS Animation -->
+    <script src="aos-animation/aos.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,39 @@
+.text-list-block{
+  position: relative;
+  &-container{
+    display: flex;
+    &-image{
+      display: flex;
+      order: 1;
+      flex-direction: column;
+      @media (max-width: 1199.98px){
+        order: 2;
+      }
+    }
+    &-text{
+      padding: 7% 11.21% 2% 6.5% ;
+      display: flex;
+      position: relative;
+      order: 2;
+      flex-direction: column;
+      background-color: $quaternary;
+      color: $dark-text;
+      @media (max-width: 1199.98px){
+        order: 1;
+      }
+      &-texture{
+        position: absolute;
+        width: 100%;
+        height: 46px;
+        background-image: url("../images/interior-textlistblock-texture.png");
+        background-size: contain;
+        background-repeat: repeat-x;
+        right: 0;
+        bottom: 0;
+        display: flex;
+  
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,109 @@
+/*used Colors*/
+$black: #000000; 
+$grey: #8C8C8C;
+$white: #ffffff; 
+
+$link: #B76F38; 
+/*used Colors*/
+
+//Variables ColorS
+
+$primary: #B76F38; //used
+$primaryLight: #F1C96D; //used
+$primarylight: #F29650; //used
+$primaryDark:#7E3F0F; //used
+$primarydark: #803C07; //used
+
+$secondary:#BADCDC; //used
+$secondaryLight: #8b005a;  
+$secondarylight: #8b005a; 
+$secondaryDark: #588F8E; 
+$secondarydark: #588F8E; //used
+
+$tertiary: #213029; //used
+$tertiaryLight: #005394; 
+$tertiarylight: #005394; 
+$tertiarydark: #354728; //used
+//$tertiaryDark: #2d3c78;
+
+$quaternary:#EFEEE4; //used
+$quaternaryLight: #c1af00; 
+$quaternarylight: #c1af00; 
+//$quaternaryDark: #c1af00;
+
+$text:#000000; //used
+$light-text:#ffffff;
+$strong: #000000;
+$dark-text: #213029; //used
+   
+$neutralDarker: #000000;
+$neutrayDark: #3c3d3f;
+$neutral: #3d3d3d;
+$neutralLight: #919191;
+$neutralLighter: #e9e9e9; 
+$neutralLightest: #f4f4f4; 
+
+
+/*Others Colors*/
+$red: #e11111; 
+//$blue: #065fab; 
+//$blueLight: #96bddb;
+//$brown: #969696; 
+//$green: #73c6a1; 
+//$greenDark: #86a63e; 
+//$greenLight: #95dabb;
+//$orange: #f88600;
+//$orangeDark: #ef4627;
+//$orangeLight: #f8901e;
+//$pink: #ffe1e3;
+//$pinkLight: #fef5f5;
+//$purple: #825a7f; 
+//$yellow: #f4bf33;
+//$yellowLight: #ffd66a;
+
+@mixin gradientshadowVerBottom{
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,0.18) 0%, rgba(10,10,10,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.18) 0%, rgba(10,10,10,0) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.18) 0%, rgba(10,10,10,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0a0a0a",GradientType=1); 
+}
+@mixin gradientshadowVerTopHeader{
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(10,10,10,0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(10,10,10,0) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(10,10,10,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0a0a0a",GradientType=1); 
+}
+
+@mixin gradientshadowHor{
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}
+
+@mixin gradientshadowVer { 
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,0.89) 0%, rgba(0,0,0,0.31) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.89) 0%, rgba(0,0,0,0.31) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.89) 0%, rgba(0,0,0,0.31) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}
+
+@mixin gradientshadowDiag{
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(132deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(132deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(132deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}
+
+@mixin gradientBanner {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}

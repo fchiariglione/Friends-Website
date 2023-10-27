@@ -1,0 +1,124 @@
+/*START Interior Top (BANNER)--------------------------------------------------*/
+.interior-banner {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  //height: 550px;
+  // @media (max-width: 1499.98px){
+  //   max-height: 66vh;
+  // }
+  // @media (max-width: 991.98px){
+  //   height: 370px;
+  //  // min-height: 370px;
+  // }
+  .banner-wrapping{
+    padding-top: inherit !important;
+    height: 100%;
+    padding-top: inherit !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    @media (max-width: 991.98px){
+      width: 100%;
+    }
+    img{
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+      &.top{
+        object-position: top;
+      }
+      &.center{
+        object-position: center;
+      }
+      &.bottom{
+        object-position: bottom;
+      }
+    }
+    &::before{
+      content: "";
+      // background-repeat: repeat-x;
+      background-image: url('../images/interior-page-banner-shadows.png');
+      background-size: cover;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+  .title-page{
+    display: block;
+    max-width: 100%;
+    min-width: inherit;
+    position: relative;
+    text-align: left;
+    width: 50%;
+    z-index: 10;
+    padding: 287px 12px 77px 12px;
+    @media (max-width: 1199.98px){
+      width: 90%;
+    }
+    @media (max-width: 575.98px){
+      width: 100%;
+      padding: 150px 0;
+    }
+    h1, h2{
+      @include font1;
+      color: $white !important;
+      font-size: 52px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.15;
+      margin: 0 !important;
+      text-transform: none;
+      padding: 6px 0;
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+      @media (max-width: 991.98px){
+        font-size: 40px !important;
+        line-height: 1;
+      }
+      @media (max-width: 575.98px){
+        font-size: 35px !important;
+      }
+      p{
+        color: $primaryLight;
+      }
+    }
+    p{
+      @include font2;
+      color: $white;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 1.33;
+      margin: 0;
+      strong{
+        color: $white;
+        font-weight: 700 !important;
+      }
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+    }   
+  }
+  &.i-singular-post, &.i-single{
+    .title-page{
+      h1{ 
+        font-size: 45px !important;
+      }
+    }
+  }
+}
+/*END Interior Top (BANNER)------------------------------------------*/

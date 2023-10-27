@@ -1,0 +1,80 @@
+.donateCalloutBlock{
+    background: linear-gradient(180deg, #BADCDC -15.33%, #588F8E 86.59%);
+    mix-blend-mode: normal;
+    position: relative;
+
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        min-height: 261px;
+        padding: 30px 10px !important;
+        margin: auto;
+        @media (min-width: 1200px){
+            max-width: 1110px !important;
+          }
+        @media (min-width: 1441px){
+        max-width: 1320px !important;
+        }
+        @media (max-width: 371.98px){
+            gap: 20px;
+            justify-content: center;;
+            }
+        &-textblock{
+            width: 49%;
+            h4, p, strong{
+                color: $white !important;
+            }
+            @media (max-width: 991.98px) {
+                width: 100%;
+            }
+        }
+        &-imageMap{
+            background-image: url("../images/interior-page-donatemap.png");
+            background-size: contain;
+            width: 30%;
+            height: 100px;
+            background-repeat: no-repeat;
+            @media (max-width: 991.98px) {
+                width: 50%;
+                order: 3;
+            }
+            @media (max-width: 371.98px) {
+                width: 100%;
+                order: 3;
+            }
+    
+        }
+        .white{
+            padding: 14px 57px !important;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 160px;
+            height: 261px;
+            background-image: url("../images/interior-page-daontetree1.png");
+            left: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.15;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 212px;
+            background-image: url("../images/interior-page-daontetree1.png");
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.15;
+        }
+        
+    }
+
+
+}

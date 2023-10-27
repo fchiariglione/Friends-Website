@@ -1,0 +1,146 @@
+.container-paginator{
+	max-width: 100%;
+	padding: 10px 0;
+	width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+.pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	@media (max-width: 991.98px){
+		flex-wrap: wrap;
+	}
+	.page-numbers.current, .current{
+		color: $secondarylight !important;
+		position: relative;
+		z-index: 0;
+		&::after{
+			content: '';
+			background-color: $secondarylight;
+			bottom: -5px;
+			height: 2px;
+			left: 0;
+			margin: 0 auto;
+			position: absolute;
+			right: 0;
+			width: 10px;
+			z-index: -1;
+		}
+	}
+	.page-numbers.next, .page-numbers.prev{
+		span{
+			display: none;
+		}
+		&:hover{
+			color: $secondarylight !important;
+			&::before{
+				color: $secondarylight !important;
+			}
+		}
+	}
+	.prev.page-numbers::before, .next.page-numbers::before{
+		@include font1;
+		color: $text !important; 
+		display: inline-block;
+		font-size: 13px !important; 
+		font-stretch: normal !important; 
+		font-style: normal !important; 
+		font-weight: bold !important; 
+		letter-spacing: normal !important; 
+		line-height: 1 !important; 
+		text-transform: none !important;
+	}
+	.prev.page-numbers{
+		&::before{
+			content: "Previous";
+		}
+	}
+	.next.page-numbers{
+		&::before{
+			content: "Next";
+		}
+	}
+	.pagination, .page-numbers, .pagination.current,.nav-links > a , .page {
+		@include font1;
+		background: transparent;
+		border: none !important;
+		color: $text !important;
+		display: inline-block;
+		font-size: 15px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: normal;
+		line-height: normal;
+		margin: 15px;
+		text-align: center;
+		text-decoration: none !important;
+		transition: all 0.4s ease;
+		&:hover{
+			text-decoration: none;
+		}
+		&.prev, &.next{
+			border: none !important;
+			font-size: 0 !important;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: normal;
+			letter-spacing: normal;
+			line-height: normal;
+			margin: 0 0;
+			padding: 0;
+			position: relative;
+			text-align: center;
+			span{
+				font-size: 0 !important;
+				&::before{
+					@include font1;
+					color: $text;
+					display: inline-block;
+					font-size: 13px;
+					font-stretch: normal;
+					font-style: normal;
+					font-weight: bold;
+					letter-spacing: normal;
+					line-height: 1;
+					text-align: center;
+					text-transform: none;
+				}
+			}
+		}
+		&.prev{
+			margin-right: auto;
+			@media (max-width: 991.98px){
+				margin-right: 40px;
+			}
+			@media (max-width: 575.98px){
+				margin-right: 20px;
+			}
+			span{
+				&::before{
+					content: "Previous";
+				}
+			}
+		}
+		&.next{
+			margin-left: auto;
+			@media (max-width: 991.98px){
+				margin-left: 40px;
+			}
+			@media (max-width: 575.98px){
+				margin-left: 20px;
+			}
+			span{
+				&::before{
+					content: "Next";
+				}
+			}
+		}
+		&.current{
+			color: $secondarylight !important;
+		}
+	}
+}

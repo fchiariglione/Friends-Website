@@ -1,0 +1,142 @@
+.related-resources-block{
+  position: relative;
+  &.padding-vertical{
+    padding: 120px 0;
+    @media (max-width: 1199.98px){
+      padding: 75px 0 50px;
+    }
+    @media (max-width: 767.98px){
+      padding: 40px 0;
+    }
+  }
+  .row-resources{
+    margin-top: 40px;
+    justify-content: space-between;
+    row-gap: 15px;
+    .box-resource{
+      position: relative;
+      background-color: $quaternary;
+      border-radius: 0;
+      padding: 76px 56px;
+      transition: background-color 0.5s ease-in-out;
+      transition-delay: 0s !important;
+      width: calc((100%/3) - 20px);
+      @media (max-width: 767.98px){
+        width: 100%;
+        padding: 40px 20px;
+        .topic{
+          left: -34px;
+        }      
+        .title{
+          padding-top: 30px;
+        }    
+      }
+      @media (min-width: 768px) and (max-width: 991.98px){
+        padding: 50px 25px;
+        width: calc((100%/2) - 15px);
+        .title{
+          padding-top: 30px;
+        }
+        .topic{
+          left: -30px;
+        }          
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px){
+        padding: 76px 25px;  
+        .topic{
+          left: -30px;
+        }      
+      }
+      span, button{
+        display: block;
+        font-stretch: normal;
+        font-style: normal;
+        transition: color 0.1s ease-in-out;
+      }
+      .topic{
+        @include font2;
+        color: $primarylight;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 1.17;
+        margin-bottom: 17px;
+        text-transform: uppercase;
+        display: block;
+        position: absolute;
+        top: 27px;
+        left: -21px;
+        background-color: $primary;
+        padding: 8px 16.45px 8px 55px;
+        z-index: 2;
+      }
+      .title{
+        @include font1;
+        color: $primary !important;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 1.28;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 3;
+      }
+      .excerpt, span p{
+        @include font2;
+        color: $dark-text;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0.2;
+        line-height: 1.33;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 3;
+      }
+
+      &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        background: linear-gradient(180deg, #B76F38 24.37%, #803C07 113.26%);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -10;
+        transition: opacity 0.4s ease-in-out;
+      }
+      &:hover, &:focus{
+        background-color: $primary;
+        text-decoration: none !important;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          display: block;
+          background: linear-gradient(180deg, #B76F38 24.37%, #803C07 113.26%);
+          top: 0;
+          left: 0;
+          opacity: 1;
+          z-index: 1;
+        }
+        .title{
+            color: $primarylight !important;
+        }
+        .topic{
+            color: $primary !important;
+            background-color: $quaternary !important;
+        }
+        span, span p{
+          color: $white;
+          text-decoration: none;
+          &.topic{
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

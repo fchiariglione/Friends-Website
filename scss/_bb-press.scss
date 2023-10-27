@@ -1,0 +1,158 @@
+#bbpress-forums{
+  a{
+    color: $link;
+  }
+  div.bbp-template-notice.info{
+    margin-top: 30px;
+  }
+  #bbp-search-form{
+    margin-bottom: 0;
+    div{
+      display: flex;
+      align-items: center;
+    }
+    input#bbp_search{
+      font-family: 'Gilda Display', sans-serif !important;
+      background: #ffffff;
+      border-radius: 0;
+      border: 2px solid #d8d8d8;
+      box-shadow: none;
+      color: #9d9da6;
+      font-size: 13px !important;
+      font-weight: 600;
+      min-height: 36px;
+      padding: 5px !important;
+      margin-right: 5px;
+      &::-webkit-input-placeholder { color: #9d9da6; opacity:1; }
+      &::-moz-placeholder { color: #9d9da6; opacity:1;; } /* firefox 19+ */
+      &:-ms-input-placeholder { color: #9d9da6; opacity:1; } /* ie */
+      &:active,&:focus{
+        box-shadow: none;
+        border-color: $link;
+        outline: none;
+        color: $link;
+        &::-webkit-input-placeholder { color: $link; opacity:1; }
+        &::-moz-placeholder { color: $link; opacity:1;; } /* firefox 19+ */
+        &:-ms-input-placeholder { color: $link; opacity:1; } /* ie */
+      }  
+    }
+    input#bbp_search_submit{
+      background-color: transparent;
+      border-radius: $btn_b_radius !important;
+      border: 1px solid rgba($color: $black, $alpha: 0.32) !important;
+      box-shadow: none;
+      color: $color_btn1 !important;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Lato', sans-serif !important;
+      font-size: $btn_font_size1 !important;
+      font-stretch: normal !important;
+      font-style: normal;
+      font-weight: $btn_font_weight1 !important;
+      letter-spacing: $btn_letter_spacing !important;
+      line-height: $btn_line_height !important;
+      margin: 0;
+      max-width: 100%;
+      overflow-wrap: break-word;
+      padding: 10px 25px;
+      position: relative;
+      text-align: center !important;
+      text-decoration: none !important;
+      text-transform: none;
+      transition: all 0.4s ease;
+      &:hover,&:focus,&:active{
+        color: $primary !important;
+      }
+    }
+  }
+  div.bbp-breadcrumb {
+    display: none;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  li.bbp-forum-info, li.bbp-topic-title{
+    @media (max-width: 575.98px){
+      width: 40%;
+    }
+  }
+  li.bbp-forum-reply-count, li.bbp-forum-topic-count, li.bbp-topic-reply-count, li.bbp-topic-voice-count{
+    @media (max-width: 575.98px){
+      width: 19%;
+    }
+  }
+  ul.bbp-topics, ul.bbp-replies{
+    li.bbp-header{
+      background-color: $secondarylight;
+      padding: 15px 8px;
+      ul{
+        li{
+          @include font1;
+          font-size: 20px;
+          text-transform: none;
+          @media (max-width: 991.98px){
+            font-size: 16px;
+          }
+          @media (max-width: 575.98px){
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    li.bbp-body{
+      ul{
+        li{
+          a{
+            @include font1;
+            color: $grey;
+            letter-spacing: 0.28px;
+            font-size: 0.9rem;
+            @media (max-width: 991.98px){
+              font-size: 11px;
+            }
+            @media (max-width: 575.98px){
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    li.bbp-footer{
+      background-color: $secondarylight;
+    }
+  }
+  .bbp-reply-form{
+    .bbp-submit-wrapper{
+      button{
+        background-color: transparent;
+        border-radius: $btn_b_radius;
+        border: 1px solid rgba($color: $black, $alpha: 0.32) !important;
+        color: $color_btn1 !important;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Lato', sans-serif !important;
+        font-size: 12px !important;
+        font-stretch: normal!important;
+        font-style: normal!important;
+        font-weight: bold !important;
+        letter-spacing: 1.1px !important;
+        line-height: normal !important;
+        margin: 0 !important;
+        max-width: 100%;
+        opacity: 1;
+        padding: 16px 25px !important;
+        position: relative;
+        text-align: center !important;
+        text-decoration: none !important;
+        text-transform: none;
+        transition: all 0.4s ease;
+        &:hover,&:focus,&:active{
+          color: $primary !important;
+          text-decoration: none;
+          outline: none; 
+        }
+      }
+    }
+  }
+}
+

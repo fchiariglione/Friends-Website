@@ -1,0 +1,188 @@
+$accordion-bg: transparent !important;
+
+.accordion-effect-block{
+  position: relative;
+  &.bg-white-color, &.bg--color{
+    .container .row{
+      .col-xl-12,.col-xl-10{
+        .title-section{
+          h2,h3,h4,h5,h6{
+            color: $text;
+          }
+        }
+        .accordionBlock{
+          .accordion-item{
+            border-top: solid 1px rgba($color: $text, $alpha: 0.3) !important;
+            &:last-child{
+              border-bottom: solid 1px rgba($color: $text, $alpha: 0.3) !important;
+            }
+            .accordion-header{
+              button.accordion-btn{
+                color: $text !important;
+                &[aria-expanded^="true"]::before{
+                  background-image: url('../images/icons/accordion-arrow-on-grey.svg');
+                }
+                &[aria-expanded^="false"]::before{
+                  background-image: url('../images/icons/accordion-arrow-off-grey.svg');
+                }
+              }
+            }
+            .accordion-body{
+              color: $text !important;
+              h2,h3,h4,h5,h6,p,strong,em,a,hr{
+                color: $text !important;
+                &::selection {
+                  background-color: $selector_color;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  .accordionBlock{
+    .accordion-item{
+      background: transparent;
+      border-color: transparent;
+      border-radius: 0 !important;
+      border-top: solid 1px rgba($color: #ffffff, $alpha: 0.3) !important;
+      box-shadow: none;
+      margin-bottom: 0 !important;
+      padding: 0;
+      &:last-child{
+        border-bottom: solid 1px rgba($color: #ffffff, $alpha: 0.3) !important;
+      }
+      .accordion-header{
+        @include font1;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 0 !important;
+        color: unset;
+        display: block;
+        font-stretch: normal;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.2;
+        margin-bottom: 0 !important;
+        margin: 0 !important;
+        padding: 0;
+        position: relative;
+        button.accordion-btn{
+          @include font1;
+          background-color: transparent !important;
+          border-radius: 0;
+          border: none;
+          color: $white;
+          display: block;
+          font-size: inherit;
+          font-stretch: normal;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 1.2;
+          margin: 0 !important;
+          overflow-wrap: break-word;
+          padding: 23px 100px 23px 0;
+          position: relative;
+          text-align: left;
+          transition: padding-bottom 0.2s ease;
+          white-space: normal;
+          width: 100%;
+          word-break: break-word;
+          @media (max-width: 767.98px){
+            padding-left: 20px;
+            padding-right: 60px;
+          }
+          &[aria-expanded^="true"]{
+            padding-bottom: 14px;
+            &::before{
+              //@include rotate(180deg);
+              //background-position: 30% 50%;
+              background-image: url('../images/icons/accordion-arrow-on.svg');
+            }
+          }
+          &[aria-expanded^="false"]{
+            &::before{
+              background-image: url('../images/icons/accordion-arrow-off.svg');
+            }
+          }
+          &::after{
+            content: none;
+          }
+          &::before{
+            content: "" !important;
+            background-position: 70% 50%;
+            background-repeat: no-repeat;
+            background-size: 9px;
+            cursor: pointer;
+            display: inline-block;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0 !important;
+            transition: all 0.4s ease;
+            width: 100px;
+            @media (max-width: 767.98px){
+              width: 60px;
+            }
+          }
+          &:hover, &:focus, &:active{
+            box-shadow: unset;
+            text-decoration: none;
+          }
+        }
+      } /*.card.header*/
+      .accordion-body{
+        background-color: transparent;
+        padding: 0 100px 35px 0;
+        color: $white;
+        @media (max-width: 767.98px){
+          padding: 0 50px 35px 0;
+        }
+        h2,h3,h4,h5,h6{
+          @include font1;
+          color: $white;
+          letter-spacing: -0.2px;
+          &::selection {
+            background-color: $selector_color;
+            color: white;
+          }
+        }
+        p,strong,em,a{
+          @include font1;
+          color: $white !important;
+          font-size: 18px;
+          font-stretch: normal;
+          letter-spacing: -0.18px;
+          line-height: 1.4;
+          &::selection {
+            background-color: $selector_color;
+            color: white;
+          }
+        }
+        p{
+          font-style: normal;
+          font-weight: 500;
+        }
+        em{
+          font-style: italic !important;
+        }
+        strong{
+          font-weight: bold !important;
+        }
+        hr{
+          border-color: $white !important;
+        }
+        &::selection {
+          background-color: $selector_color;
+          color: white;
+        }
+      }
+    }
+  }
+}

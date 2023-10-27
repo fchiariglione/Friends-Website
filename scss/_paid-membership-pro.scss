@@ -1,0 +1,322 @@
+
+#pmpro_levels_table thead tr th{
+  background-color: $primary;
+}
+.wpcw-form .wpcw-form-row input.wpcw-input-text, .wpcw-form .wpcw-form-row textarea{
+  background-color: #f0f0f0 !important;
+  border-radius: 7px;
+  border: 1px solid #f0f0f0;
+  box-shadow: none;
+  color: #2d1a09;
+  height: 40px;
+  padding: 3px 10px !important;
+}
+#pmpro_levels_table tbody tr td a.pmpro_btn {
+  background-color: $secondary !important;
+  border-radius: 7px;
+  border: none;
+  box-shadow: none;
+  color: $white !important;
+  display: inline-block;
+  font-family: 'font1 Sans',   sans-serif !important;    
+  font-size: 16px !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  line-height: 1 !important;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 16px 28px;
+  position: relative;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-transform: none;
+  transition: all 0.4s ease;
+}
+#pmpro_levels_table tbody tr td a.pmpro_btn.pmpro_btn-select{
+  background-color: $primary !important;
+  color: #ffffff !important;
+  width: 100%;
+}
+
+
+.pmpro_checkout-fields{
+  #date_div , #date_d , #date_y{
+    margin: 0 10px 10px 0;
+  }
+  form.pmpro_form .pmpro_checkout-fields div{
+    margin: 0 10px 20px 0;
+  }
+}
+form.pmpro_form .input, form.pmpro_form textarea, form.pmpro_form select{
+  margin-right: 10px !important;
+}
+.wpcw-form .wpcw-form-row input.wpcw-input-text, .wpcw-form .wpcw-form-row textarea{
+  background-color: $primary !important;
+  color: #ffffff !important;
+  width: 100%;
+}
+#pmpro_levels_table{
+  margin-bottom: 40px;
+  thead{
+    tr{
+      th{
+        padding: 15px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 1;
+        text-transform: none;
+      }
+    }    
+  }
+  tbody{
+    tr{
+      border-bottom: 1px solid #000000;
+      td{
+        padding: 5px 10px;
+        a.pmpro_btn {
+          background-color: $black;
+          color: $white !important;
+          border-radius: 0;
+          border: none;
+          display: inline-block;
+          font-family: 'Lato', sans-serif !important;    
+          font-size: 18px !important;
+          font-stretch: normal !important;
+          font-style: normal !important;
+          font-weight: normal !important;
+          letter-spacing: normal !important;
+          line-height: 1.39 !important;
+          max-width: 100%;
+          padding: 10px 15px 11px;
+          position: relative;
+          text-align: center;
+          margin: 0 auto;
+          text-decoration: none !important;
+          text-transform: none;
+          transition: all 0.4s ease;
+          &:hover,&:focus,&:active{
+            background: $secondary;
+            color: $black !important;
+            text-decoration: none;      
+          }   
+          &.pmpro_btn-select{
+            background-color: $secondary !important;
+            color: $black !important;
+          }
+        }
+      }
+    }
+  }
+}
+div[id^="pmpro_levels"].pmpro_advanced_levels-bootstrap{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+  -webkit-box-align: stretch !important;
+  -ms-flex-align: stretch !important;
+  align-items: stretch !important;
+  margin-bottom: 10px;
+  position: relative;
+  .pmpro_level{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    .panel.panel-default{
+      -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      background-color: #fff;
+      border-color: #ddd;
+      border-radius: 0px;
+      border: 1px solid #000000;        
+      box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      height: 100%;
+      header.panel-heading{
+        color: #ffffff !important;
+        background-color: #000000 !important; 
+        border-color: #000000 !important;   
+        padding: 15px !important;
+        h2,h3,h4{
+          color: #ffffff !important;
+          font-size: 25px !important;
+        }
+      }
+      .panel-body{
+        text-align: left;
+        padding: 15px 15px 120px;
+        position: relative;
+        height: calc(100% - 60px);
+        footer.entry-footer{
+          bottom: 15px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: calc(100% - 30px);
+          .btn-primary{
+            background-color: #182955;
+            border-radius: 7px;
+            border: none;
+            box-shadow: none;
+            color: $white !important;
+            display: inline-block;
+            font-family: 'font1 Sans', sans-serif !important;    
+            font-size: 16px !important;
+            font-stretch: normal !important;
+            font-style: normal !important;
+            font-weight: 500 !important;
+            letter-spacing: normal !important;
+            line-height: 1 !important;
+            max-width: 100%;
+            overflow-wrap: break-word;
+            padding: 16px 28px;
+            position: relative;
+            text-align: center !important;
+            text-decoration: none !important;
+            text-transform: none;
+            transition: all 0.4s ease;
+            &:hover,&:focus,&:active{
+              background: darken($color: $secondary, $amount: 10);
+              box-shadow: none;
+              color: $white !important;    
+              text-decoration: none;
+            }    
+          }
+        }
+      }
+    }
+  }
+}
+form.pmpro_form .pmpro_checkout-fields div{
+  margin-bottom: 10px !important;
+}
+form.pmpro_form label{
+  margin-bottom: 10px !important;
+}
+.pmpro_checkout{
+  input[type="checkbox"], input[type="radio"]{
+    height: inherit !important;
+  }
+  input:not([type="submit"]),textarea,select{
+    background: #f0f0f0;
+    border-radius: 7px;
+    border: 1px solid #f0f0f0;
+    box-shadow: none;
+    color: #2d1a09;
+    height: 40px;
+    padding: 3px 10px !important;
+    &:active,&:focus{
+      box-shadow:0 0 4px rgba(0,0,0,.2);
+      outline: none;
+    }
+  }
+  input[type="button"]{
+    background-color: #182955 !important;
+    border-radius: 7px;
+    border: none !important;
+    box-shadow: none;
+    color: $white !important;
+    display: inline-block;
+    font-family: 'font1 Sans', sans-serif !important;    
+    font-size: 16px !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    letter-spacing: normal !important;
+    line-height: 1 !important;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 16px 28px;
+    position: relative;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    transition: all 0.4s ease;
+  }
+}
+#pmpro_submit_span{
+  display: inline-block;
+  margin: 0 !important;
+  position: relative;
+  padding: 0 !important;
+  width: auto !important;
+  margin-top: 30px !important;
+  input[type="submit"], input.button{
+    background-color: #182955;
+    border-radius: 7px;
+    border: none;
+    box-shadow: none;
+    color: $white !important;
+    display: inline-block;
+    font-family: 'font1 Sans', sans-serif !important;    
+    font-size: 16px !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    letter-spacing: normal !important;
+    line-height: 1 !important;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 16px 28px;
+    position: relative;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: none;
+    transition: all 0.4s ease;
+    &:hover,&:focus,&:active{
+      background: $black;
+      color: #fff !important;
+      text-decoration: none;
+      &::after{
+        background-image: url('../images/chevron-white-right.svg');
+      }
+    }
+  }
+}
+.pmpro_checkout-field{
+  margin-bottom: 5px !important;
+}
+#pmpro_levels .text-muted {
+  text-align: center;
+  display: block;
+float:left;
+margin-top:10px;
+width:100%;
+}
+#pmpro_level-3 .entry-content{
+min-height: 124px;
+}
+#pmpro_level-5 .entry-content{
+min-height: 232px;
+}
+
+@include mediaqueries(1200max) {
+  
+}
+@include mediaqueries(991max) {
+  #pmpro_levels_table {
+    margin: 0 auto 25px;
+  }
+  #pmpro_levels {
+
+    .pmpro_level.col-md-12{
+      max-width:100%;
+      margin-bottom:0px;
+    }
+  }
+}
+@include mediaqueries(767max) { 
+  .wpcw-form .wpcw-form-row-first, .wpcw-form .wpcw-form-row-last{
+    width: 100%;
+
+  }
+}
+@include mediaqueries(576max) { 
+
+}

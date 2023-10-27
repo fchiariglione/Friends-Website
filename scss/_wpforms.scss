@@ -1,0 +1,348 @@
+.wpforms-container.wpforms-container-full{
+  .wpforms-validate {
+    padding-top: 100px;
+    margin-top: -50px;
+    @media (max-width: 1199.98px){
+      padding-top: 70px;
+      margin-top: -35px;
+    }
+  }
+}
+
+.wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message){
+  background: $secondary;
+  border: 1px solid $secondary;
+  p{
+    margin-bottom: 0 !important;
+  }
+}
+.wpforms-container{
+  .wpforms-page-indicator.progress{
+    .wpforms-page-indicator-steps{
+      line-height: 1;
+      flex: 0 0 auto;
+      margin-right: 20px;
+    }
+    .wpforms-page-indicator-page-progress-wrap{
+      margin: 0;
+    }
+  }
+  .wpforms-field-container{
+    // Steps
+    .wpforms-page{
+      .wpforms-pagebreak-left{
+        button{
+          margin-right: 20px;
+        }
+      }
+      .wpforms-pagebreak-center{
+        button{
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+      .wpforms-pagebreak-right{
+        button{
+          margin-left: 20px;
+        }
+      }
+      .wpforms-page-button {
+        background-color: transparent;
+        border-radius: $btn_b_radius;
+        border: 1px solid rgba($color: $black, $alpha: 0.32) !important;
+        color: $color_btn1 !important;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Lato', sans-serif !important;
+        font-size: 14px !important;
+        font-stretch: normal!important;
+        font-style: normal!important;
+        font-weight: 600 !important;
+        letter-spacing: 1.1px !important;
+        line-height: normal !important;
+        margin: 0;
+        max-width: 100%;
+        opacity: 1;
+        padding: 16px 25px !important;
+        position: relative;
+        text-align: center !important;
+        text-decoration: none !important;
+        text-transform: none;
+        transition: all 0.4s ease;
+        &:hover,&:focus,&:active{
+          color: $primary !important;
+          text-decoration: none;
+          outline: none; 
+        }
+      }
+    }
+    // end Steps
+
+    // Global Styles
+    .wpforms-field{
+      label:not(.wpforms-error){
+        font-family: 'Lato', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        margin: 0 0 15px 0 !important;
+        color: $text !important;
+      }
+      .wpforms-error{
+        font-size: 11px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primary;
+      }
+      input.wpforms-smart-phone-field{
+        padding-left: 50px  !important;
+      }
+      input:not([type="checkbox"]){
+        background: #ffffff;
+        border-radius: 0;
+        border: 1px solid #d8d8d8;
+        box-shadow: none;
+        color: #9d9da6;
+        font-family: 'Lato', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 500;
+        min-height: 37px;
+        padding: 8px 15px;
+        &::-webkit-input-placeholder { color: #9d9da6; opacity:1; }
+        &::-moz-placeholder { color: #9d9da6; opacity:1;; } /* firefox 19+ */
+        &:-ms-input-placeholder { color: #9d9da6; opacity:1; } /* ie */
+        &:active,&:focus{
+          box-shadow: none;
+          border-color: $link;
+          outline: none;
+          color: $link;
+          &::-webkit-input-placeholder { color: $link; opacity:1; }
+          &::-moz-placeholder { color: $link; opacity:1;; } /* firefox 19+ */
+          &:-ms-input-placeholder { color: $link; opacity:1; } /* ie */
+        }
+        &.wpforms-error{
+          &::-webkit-input-placeholder { color: #eb2c2c; opacity:1; }
+          &::-moz-placeholder { color: #eb2c2c; opacity:1;; } /* firefox 19+ */
+          &:-ms-input-placeholder { color: #eb2c2c; opacity:1; } /* ie */
+        }
+      }
+      select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url('../images/icons/select-arrow.png') 97%/10px no-repeat #ffffff;
+        border-radius: 0;
+        color: #9d9da6;
+        font-family: 'Lato', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 500;
+        line-height: 1.5em !important;
+        min-height: 37px;
+        padding: 5px 10px !important;
+        transition: all 0.4s ease;
+        option{
+          height: 37px;
+          color: #9d9da6;
+        }
+        &:focus, &:active{
+          border-color: $link;
+          background: url('../images/icons/select-arrow.png') 97%/10px no-repeat #ffffff;
+          transition: all 0.4s ease;
+          color: $link;
+        }
+      }
+      textarea{
+        height: 100px;
+        resize:none;
+        max-width: 100%;
+      }
+      &.wpforms-field-radio{
+        ul{
+          li{
+            input {
+              cursor: pointer;
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+            } 
+            [type="radio"]:checked + label,
+            [type="radio"]:not(:checked) + label {
+              @include font1;
+              color: $text;
+              cursor: pointer;
+              display: inline-block !important;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1;
+              margin: 0 auto ;
+              padding: 2px 0 2px 25px !important;
+              position: relative;
+              vertical-align: middle;
+              max-width: 100%;
+              z-index: 1;
+              &::after{
+                content: "" ;
+                -webkit-transition: all 0.2s ease;
+                background: $primary;
+                border-radius: 4px;
+                border: solid 2px $primary;
+                height: 19px;
+                left: 0;
+                position: absolute;
+                top: 1px;
+                transition: all 0.2s ease;
+                width: 19px;
+                z-index: -1;
+              }     
+            }
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+              position: absolute;
+              left: -9999px;
+              margin: 0!important; 
+            }
+            [type="radio"]:checked + label{  
+              &::before{
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                /*--adjust as necessary--*/      
+                color: $white;
+                font-size: 11px;
+                left: 4px;
+                position: absolute;
+                top: 5px;
+              } 
+            }
+            [type="radio"]:not(:checked) + label:after {
+              content: "" ;
+              transition: all 0.2s ease;
+              -webkit-transition: all 0.2s ease;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+              background: transparent;
+              border: 2px solid #cdcdd5;
+            }
+          }
+        } 
+      }
+      &.wpforms-field-checkbox{
+        ul{
+          li{
+            input {
+              cursor: pointer;
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+            } 
+            [type="checkbox"]:checked + label,
+            [type="checkbox"]:not(:checked) + label {
+              @include font1;
+              color: $text;
+              cursor: pointer;
+              display: inline-block !important;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1;
+              margin: 0 auto ;
+              padding: 2px 0 2px 25px !important;
+              position: relative;
+              vertical-align: middle;
+              max-width: 100%;
+              z-index: 1;
+              &::after{
+                content: "" ;
+                -webkit-transition: all 0.2s ease;
+                background: $primary;
+                border-radius: 4px;
+                border: solid 2px $primary;
+                height: 19px;
+                left: 0;
+                position: absolute;
+                top: 1px;
+                transition: all 0.2s ease;
+                width: 19px;
+                z-index: -1;
+              }     
+            }
+            [type="checkbox"]:checked,
+            [type="checkbox"]:not(:checked) {
+              position: absolute;
+              left: -9999px;
+              margin: 0!important; 
+            }
+            [type="checkbox"]:checked + label{  
+              &::before{
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                /*--adjust as necessary--*/      
+                color: $white;
+                font-size: 11px;
+                left: 3px;
+                position: absolute;
+                top: 5px;
+              } 
+            }
+            [type="checkbox"]:not(:checked) + label:after {
+              content: "" ;
+              transition: all 0.2s ease;
+              -webkit-transition: all 0.2s ease;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+              background: transparent;
+              border: 2px solid #cdcdd5;
+            }
+          }
+        } 
+      }
+    }
+  }
+  .wpforms-submit-container{
+    button{
+      background-color: transparent !important;
+      border-radius: $btn_b_radius;
+      border: 1px solid rgba($color: $black, $alpha: 0.32) !important;
+      color: $color_btn1 !important;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Lato', sans-serif !important;
+      font-size: 14px !important;
+      font-stretch: normal!important;
+      font-style: normal!important;
+      font-weight: 600 !important;
+      letter-spacing: 1.1px !important;
+      line-height: normal !important;
+      margin: 0 !important;
+      max-width: 100%;
+      opacity: 1;
+      padding: 16px 25px !important;
+      position: relative;
+      text-align: center !important;
+      text-decoration: none !important;
+      text-transform: none;
+      transition: all 0.4s ease;
+      &:hover,&:focus,&:active{
+        color: $primary !important;
+        text-decoration: none;
+        outline: none; 
+      }
+    }
+  }
+}

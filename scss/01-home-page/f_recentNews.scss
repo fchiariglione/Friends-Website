@@ -1,0 +1,112 @@
+.recentNews{
+    position: relative;
+    transition: all 0.4s ease;
+    width: 100%;
+    background-image: url("../images/recentNews-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-container{
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+    .recentNews-row{
+        position: relative;
+        .recentNews-icon{
+            position: relative;
+            text-align: left;
+            img{
+                width: 132px;
+                height: 70px;
+            }
+            &::before{
+                content: "";
+                transition: opacity 0.4s;
+                position: absolute;
+                display: block;
+                height: 84px;
+                width: 82px;
+                left: -82px;
+                background-image: url("../images/recentNews-mapline.svg");
+                background-size: cover;
+                opacity: 1;
+            }
+            @media (max-width: 768.98px) {
+                text-align: center;
+                &::before{
+                    opacity: 0;
+                }
+            }
+        }
+        .recentNews-image{
+            position: absolute;
+            width: 610px;
+            height: 157px;
+            right: 0;
+            top: -78px;
+            img{
+                object-fit: cover;
+            }
+        }
+        .recentNews-title{
+            h2{
+                color: $dark-text;
+                font-size: 38px;
+                line-height: 47px;
+                letter-spacing: 0.1px;
+                margin: 0;
+            }
+    
+        }
+    }
+    .recentNews-content{
+        justify-content: space-between;
+        row-gap: 42px;
+        .featureNews{
+            flex: 1 1 220px;
+            max-width: 350px;
+            .featureNews-calendar{
+                padding-top: 26px;
+                a{
+                    color: $dark-text;
+                }
+            }
+            .featureNews-category{
+                a{
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.98px){
+        .recentNews-title{
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            h2{
+                font-size: 28px !important;
+                line-height: 35px !important;
+                letter-spacing: 0.1px !important;
+            }
+        }
+        .recentNews-content{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .featureNews{
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 768px) and (max-width: 1199.98px){
+        .recentNews-title{
+            h2{
+                font-size: 28px !important;
+                line-height: 35px !important;
+                letter-spacing: 0.1px !important;
+            }
+        }
+
+    }
+}
